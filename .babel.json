@@ -1,0 +1,4086 @@
+{
+  "{\"filename\":\"/root/startup-milk/src/cli.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/root/startup-milk/src\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3:dev": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "data/config.private",
+            "imported": [
+              "MONGO"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "MONGO",
+                "local": "MONGO"
+              }
+            ]
+          },
+          {
+            "source": "helpers/validators",
+            "imported": [
+              "validatePassword",
+              "validateEmail"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "validatePassword",
+                "local": "validatePassword"
+              },
+              {
+                "kind": "named",
+                "imported": "validateEmail",
+                "local": "validateEmail"
+              }
+            ]
+          },
+          {
+            "source": "models/user",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "User"
+              }
+            ]
+          },
+          {
+            "source": "models/products",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "Products"
+              }
+            ]
+          },
+          {
+            "source": "models/cart",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "Cart"
+              }
+            ]
+          },
+          {
+            "source": "models/order",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "Order"
+              }
+            ]
+          },
+          {
+            "source": "mongoose",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "mongoose"
+              }
+            ]
+          },
+          {
+            "source": "readline",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "readline"
+              }
+            ]
+          },
+          {
+            "source": "bcryptjs",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "bcrypt"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [
+            "init",
+            "makeAdmin",
+            "changePassword",
+            "createAdminUser"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "init",
+              "exported": "init"
+            },
+            {
+              "kind": "local",
+              "local": "makeAdmin",
+              "exported": "makeAdmin"
+            },
+            {
+              "kind": "local",
+              "local": "changePassword",
+              "exported": "changePassword"
+            },
+            {
+              "kind": "local",
+              "local": "createAdminUser",
+              "exported": "createAdminUser"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/root/startup-milk/src/cli.js",
+      "filenameRelative": "/root/startup-milk/src/cli.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "cli.js",
+      "sourceFileName": "cli.js",
+      "sourceRoot": "/root/startup-milk/src",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/root/startup-milk/src",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "cli"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.init = init;\nexports.makeAdmin = makeAdmin;\nexports.changePassword = changePassword;\nexports.createAdminUser = createAdminUser;\n\nvar _config = require('data/config.private');\n\nvar _validators = require('helpers/validators');\n\nvar _user = require('models/user');\n\nvar _user2 = _interopRequireDefault(_user);\n\nvar _products = require('models/products');\n\nvar _products2 = _interopRequireDefault(_products);\n\nvar _cart = require('models/cart');\n\nvar _cart2 = _interopRequireDefault(_cart);\n\nvar _order = require('models/order');\n\nvar _order2 = _interopRequireDefault(_order);\n\nvar _mongoose = require('mongoose');\n\nvar _mongoose2 = _interopRequireDefault(_mongoose);\n\nvar _readline = require('readline');\n\nvar _readline2 = _interopRequireDefault(_readline);\n\nvar _bcryptjs = require('bcryptjs');\n\nvar _bcryptjs2 = _interopRequireDefault(_bcryptjs);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_mongoose2.default.connect(_config.MONGO.url, _config.MONGO.options).then(function () {}).catch(function (err) {\n  console.error('Please check your MongoDB connection parameters');\n  process.exit(1);\n}); /* eslint-disable no-console */\n\nfunction init() {\n  _user2.default.init().then(function () {\n    console.log('User init completed');\n    return _products2.default.init();\n  }).then(function () {\n    console.log('Product init completed');\n    return _cart2.default.init();\n  }).then(function () {\n    console.log('Cart init completed');\n    return _order2.default.init();\n  }).then(function () {\n    console.log('Order init completed');\n    process.exit(1);\n  }).catch(function (err) {\n    console.log(err);\n    process.exit(1);\n  });\n}\n\nfunction makeAdmin() {\n  var rl = _readline2.default.createInterface({\n    input: process.stdin,\n    output: process.stdout\n  });\n\n  rl.question('Email: ', function (email) {\n    _user2.default.findOne({ email: email }).then(function (user) {\n      if (!user) {\n        throw new Error('User not found');\n      }\n\n      if (user.role === 'admin') {\n        throw new Error('User is already an admin');\n      }\n\n      user.role = 'admin';\n      return user.save();\n    }).then(function (user) {\n      console.log('done');\n      process.exit(1);\n    }).catch(function (e) {\n      console.log(e);\n      process.exit(1);\n    });\n  });\n}\n\nfunction changePassword() {\n  var rl = _readline2.default.createInterface({\n    input: process.stdin,\n    output: process.stdout\n  });\n\n  rl.question('Email: ', function (email) {\n    rl.question('Password: ', function (pass1) {\n      rl.question('Repeat password: ', function (pass2) {\n        _user2.default.findOne({ email: email }).then(function (user) {\n          if (!user) {\n            throw new Error('User not found');\n          }\n\n          if (pass1 !== pass2) {\n            throw new Error('Password doesnt match');\n          }\n\n          var pass_validation = (0, _validators.validatePassword)(pass1);\n\n          if (pass_validation !== true) {\n            throw new Error(pass_validation);\n          }\n\n          user.hashed_password = _bcryptjs2.default.hashSync(pass1, 8);\n          return user.save();\n        }).then(function (user) {\n          console.log('done');\n          process.exit(1);\n        }).catch(function (e) {\n          console.log(e);\n          process.exit(1);\n        });\n      });\n    });\n  });\n}\n\nfunction createAdminUser() {\n  var rl = _readline2.default.createInterface({\n    input: process.stdin,\n    output: process.stdout\n  });\n\n  rl.question('Email: ', function (email) {\n    rl.question('Password: ', function (pass1) {\n      rl.question('Repeat password: ', function (pass2) {\n        if (pass1 !== pass2) {\n          console.log('passwords do not match');\n          process.exit(1);\n        }\n\n        var pass_validation = (0, _validators.validatePassword)(pass1);\n        var email_validation = (0, _validators.validateEmail)(email);\n\n        if (pass_validation !== true) {\n          console.log(pass_validation);\n          process.exit(1);\n        }\n\n        if (email_validation !== true) {\n          console.log(email_validation);\n          process.exit(1);\n        }\n\n        var hashed_password = _bcryptjs2.default.hashSync(pass1, 8);\n\n        _user2.default.create({ email: email, role: 'admin', hashed_password: hashed_password }, function (err, user) {\n          if (err) {\n            console.log(err);\n          } else {\n            console.log('User have been added successfully');\n          }\n\n          process.exit(1);\n        });\n      });\n    });\n  });\n}\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNsaS5qcyJdLCJuYW1lcyI6WyJpbml0IiwibWFrZUFkbWluIiwiY2hhbmdlUGFzc3dvcmQiLCJjcmVhdGVBZG1pblVzZXIiLCJtb25nb29zZSIsImNvbm5lY3QiLCJNT05HTyIsInVybCIsIm9wdGlvbnMiLCJ0aGVuIiwiY2F0Y2giLCJlcnIiLCJjb25zb2xlIiwiZXJyb3IiLCJwcm9jZXNzIiwiZXhpdCIsIlVzZXIiLCJsb2ciLCJQcm9kdWN0cyIsIkNhcnQiLCJPcmRlciIsInJsIiwicmVhZGxpbmUiLCJjcmVhdGVJbnRlcmZhY2UiLCJpbnB1dCIsInN0ZGluIiwib3V0cHV0Iiwic3Rkb3V0IiwicXVlc3Rpb24iLCJlbWFpbCIsImZpbmRPbmUiLCJ1c2VyIiwiRXJyb3IiLCJyb2xlIiwic2F2ZSIsImUiLCJwYXNzMSIsInBhc3MyIiwicGFzc192YWxpZGF0aW9uIiwiaGFzaGVkX3Bhc3N3b3JkIiwiYmNyeXB0IiwiaGFzaFN5bmMiLCJlbWFpbF92YWxpZGF0aW9uIiwiY3JlYXRlIl0sIm1hcHBpbmdzIjoiOzs7OztRQW1CZ0JBLEksR0FBQUEsSTtRQXdCQUMsUyxHQUFBQSxTO1FBK0JBQyxjLEdBQUFBLGM7UUF5Q0FDLGUsR0FBQUEsZTs7QUFqSGhCOztBQUNBOztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7Ozs7QUFFQUMsbUJBQVNDLE9BQVQsQ0FBaUJDLGNBQU1DLEdBQXZCLEVBQTRCRCxjQUFNRSxPQUFsQyxFQUEyQ0MsSUFBM0MsQ0FBZ0QsWUFBTSxDQUVyRCxDQUZELEVBRUdDLEtBRkgsQ0FFUyxVQUFDQyxHQUFELEVBQVM7QUFDaEJDLFVBQVFDLEtBQVIsQ0FBYyxpREFBZDtBQUNBQyxVQUFRQyxJQUFSLENBQWEsQ0FBYjtBQUNELENBTEQsRSxDQVpBOztBQW1CTyxTQUFTZixJQUFULEdBQWdCO0FBQ3JCZ0IsaUJBQUtoQixJQUFMLEdBQ0dTLElBREgsQ0FDUSxZQUFNO0FBQ1ZHLFlBQVFL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Q0FBYjtBQUNEOztBQUVELFlBQU13QixrQkFBa0JDLG1CQUFPQyxRQUFQLENBQWdCTCxLQUFoQixFQUF1QixDQUF2QixDQUF4Qjs7QUFFQXBCLHVCQUFLMkIsTUFBTCxDQUFZLEVBQUVkLFlBQUYsRUFBU0ksTUFBTSxPQUFmLEVBQXdCTSxnQ0FBeEIsRUFBWixFQUF1RCxVQUFDNUIsR0FBRCxFQUFNb0IsSUFBTixFQUFlO0FBQ3BFLGNBQUlwQixHQUFKLEVBQVM7QUFDUEMsb0JBQVFLLEdBQVIsQ0FBWU4sR0FBWjtBQUNELFdBRkQsTUFFTztBQUNMQyxvQkFBUUssR0FBUixDQUFZLG1DQUFaO0FBQ0Q7O0FBRURILGtCQUFRQyxJQUFSLENBQWEsQ0FBYjtBQUNELFNBUkQ7QUFTRCxPQTlCRDtBQStCRCxLQWhDRDtBQWlDRCxHQWxDRDtBQW1DRCIsImZpbGUiOiJjbGkuanMiLCJzb3VyY2VSb290IjoiL3Jvb3Qvc3RhcnR1cC1taWxrL3NyYyIsInNvdXJjZXNDb250ZW50IjpbIi8qIGVzbGludC1kaXNhYmxlIG5vLWNvbnNvbGUgKi9cblxuaW1wb3J0IHsgTU9OR08gfSBmcm9tICdkYXRhL2NvbmZpZy5wcml2YXRlJztcbmltcG9ydCB7IHZhbGlkYXRlUGFzc3dvcmQsIHZhbGlkYXRlRW1haWwgfSBmcm9tICdoZWxwZXJzL3ZhbGlkYXRvcnMnO1xuaW1wb3J0IFVzZXIgZnJvbSAnbW9kZWxzL3VzZXInO1xuaW1wb3J0IFByb2R1Y3RzIGZyb20gJ21vZGVscy9wcm9kdWN0cyc7XG5pbXBvcnQgQ2FydCBmcm9tICdtb2RlbHMvY2FydCc7XG5pbXBvcnQgT3JkZXIgZnJvbSAnbW9kZWxzL29yZGVyJztcbmltcG9ydCBtb25nb29zZSBmcm9tICdtb25nb29zZSc7XG5pbXBvcnQgcmVhZGxpbmUgZnJvbSAncmVhZGxpbmUnO1xuaW1wb3J0IGJjcnlwdCBmcm9tICdiY3J5cHRqcyc7XG5cbm1vbmdvb3NlLmNvbm5lY3QoTU9OR08udXJsLCBNT05HTy5vcHRpb25zKS50aGVuKCgpID0+IHtcblxufSkuY2F0Y2goKGVycikgPT4ge1xuICBjb25zb2xlLmVycm9yKCdQbGVhc2UgY2hlY2sgeW91ciBNb25nb0RCIGNvbm5lY3Rpb24gcGFyYW1ldGVycycpO1xuICBwcm9jZXNzLmV4aXQoMSk7XG59KTtcblxuZXhwb3J0IGZ1bmN0aW9uIGluaXQoKSB7XG4gIFVzZXIuaW5pdCgpXG4gICAgLnRoZW4oKCkgPT4ge1xuICAgICAgY29uc29sZS5sb2coJ1VzZXIgaW5pdCBjb21wbGV0ZWQnKTtcbiAgICAgIHJldHVybiBQcm9kdWN0cy5pbml0KCk7XG4gICAgfSlcbiAgICAudGhlbigoKSA9PiB7XG4gICAgICBjb25zb2xlLmxvZygnUHJvZHVjdCBpbml0IGNvbXBsZXRlZCcpO1xuICAgICAgcmV0dXJuIENhcnQuaW5pdCgpO1xuICAgIH0pXG4gICAgLnRoZW4oKCkgPT4ge1xuICAgICAgY29uc29sZS5sb2coJ0NhcnQgaW5pdCBjb21wbGV0ZWQnKTtcbiAgICAgIHJldHVybiBPcmRlci5pbml0KCk7XG4gICAgfSlcbiAgICAudGhlbigoKSA9PiB7XG4gICAgICBjb25zb2xlLmxvZygnT3JkZXIgaW5pdCBjb21wbGV0ZWQnKTtcbiAgICAgIHByb2Nlc3MuZXhpdCgxKTtcbiAgICB9KVxuICAgIC5jYXRjaCgoZXJyKSA9PiB7XG4gICAgICBjb25zb2xlLmxvZyhlcnIpO1xuICAgICAgcHJvY2Vzcy5leGl0KDEpO1xuICAgIH0pO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gbWFrZUFkbWluKCkge1xuICBjb25zdCBybCA9IHJlYWRsaW5lLmNyZWF0ZUludGVyZmFjZSh7XG4gICAgaW5wdXQ6IHByb2Nlc3Muc3RkaW4sXG4gICAgb3V0cHV0OiBwcm9jZXNzLnN0ZG91dCxcbiAgfSk7XG5cbiAgcmwucXVlc3Rpb24oJ0VtYWlsOiAnLCAoZW1haWwpID0+IHtcbiAgICBVc2VyLmZpbmRPbmUoeyBlbWFpbCB9KVxuICAgICAgLnRoZW4oKHVzZXIpID0+IHtcbiAgICAgICAgaWYgKCF1c2VyKSB7XG4gICAgICAgICAgdGhyb3cgbmV3IEVycm9yKCdVc2VyIG5vdCBmb3VuZCcpO1xuICAgICAgICB9XG5cbiAgICAgICAgaWYgKHVzZXIucm9sZSA9PT0gJ2FkbWluJykge1xuICAgICAgICAgIHRocm93IG5ldyBFcnJvcignVXNlciBpcyBhbHJlYWR5IGFuIGFkbWluJyk7XG4gICAgICAgIH1cblxuICAgICAgICB1c2VyLnJvbGUgPSAnYWRtaW4nO1xuICAgICAgICByZXR1cm4gdXNlci5zYXZlKCk7XG4gICAgICB9KVxuICAgICAgLnRoZW4oKHVzZXIpID0+IHtcbiAgICAgICAgY29uc29sZS5sb2coJ2RvbmUnKTtcbiAgICAgICAgcHJvY2Vzcy5leGl0KDEpO1xuICAgICAgfSlcbiAgICAgIC5jYXRjaCgoZSkgPT4ge1xuICAgICAgICBjb25zb2xlLmxvZyhlKTtcbiAgICAgICAgcHJvY2Vzcy5leGl0KDEpO1xuICAgICAgfSk7XG4gIH0pO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gY2hhbmdlUGFzc3dvcmQoKSB7XG4gIGNvbnN0IHJsID0gcmVhZGxpbmUuY3JlYXRlSW50ZXJmYWNlKHtcbiAgICBpbnB1dDogcHJvY2Vzcy5zdGRpbixcbiAgICBvdXRwdXQ6IHByb2Nlc3Muc3Rkb3V0LFxuICB9KTtcblxuICBybC5xdWVzdGlvbignRW1haWw6ICcsIChlbWFpbCkgPT4ge1xuICAgIHJsLnF1ZXN0aW9uKCdQYXNzd29yZDogJywgKHBhc3MxKSA9PiB7XG4gICAgICBybC5xdWVzdGlvbignUmVwZWF0IHBhc3N3b3JkOiAnLCAocGFzczIpID0+IHtcbiAgICAgICAgVXNlci5maW5kT25lKHsgZW1haWwgfSlcbiAgICAgICAgICAudGhlbigodXNlcikgPT4ge1xuICAgICAgICAgICAgaWYgKCF1c2VyKSB7XG4gICAgICAgICAgICAgIHRocm93IG5ldyBFcnJvcignVXNlciBub3QgZm91bmQnKTtcbiAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgaWYgKHBhc3MxICE9PSBwYXNzMikge1xuICAgICAgICAgICAgICB0aHJvdyBuZXcgRXJyb3IoJ1Bhc3N3b3JkIGRvZXNudCBtYXRjaCcpO1xuICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICBjb25zdCBwYXNzX3ZhbGlkYXRpb24gPSB2YWxpZGF0ZVBhc3N3b3JkKHBhc3MxKTtcblxuICAgICAgICAgICAgaWYgKHBhc3NfdmFsaWRhdGlvbiAhPT0gdHJ1ZSkge1xuICAgICAgICAgICAgICB0aHJvdyBuZXcgRXJyb3IocGFzc192YWxpZGF0aW9uKTtcbiAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgdXNlci5oYXNoZWRfcGFzc3dvcmQgPSBiY3J5cHQuaGFzaFN5bmMocGFzczEsIDgpO1xuICAgICAgICAgICAgcmV0dXJuIHVzZXIuc2F2ZSgpO1xuICAgICAgICAgIH0pXG4gICAgICAgICAgLnRoZW4oKHVzZXIpID0+IHtcbiAgICAgICAgICAgIGNvbnNvbGUubG9nKCdkb25lJyk7XG4gICAgICAgICAgICBwcm9jZXNzLmV4aXQoMSk7XG4gICAgICAgICAgfSlcbiAgICAgICAgICAuY2F0Y2goKGUpID0+IHtcbiAgICAgICAgICAgIGNvbnNvbGUubG9nKGUpO1xuICAgICAgICAgICAgcHJvY2Vzcy5leGl0KDEpO1xuICAgICAgICAgIH0pO1xuICAgICAgfSk7XG4gICAgfSk7XG4gIH0pO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gY3JlYXRlQWRtaW5Vc2VyKCkge1xuICBjb25zdCBybCA9IHJlYWRsaW5lLmNyZWF0ZUludGVyZmFjZSh7XG4gICAgaW5wdXQ6IHByb2Nlc3Muc3RkaW4sXG4gICAgb3V0cHV0OiBwcm9jZXNzLnN0ZG91dCxcbiAgfSk7XG5cbiAgcmwucXVlc3Rpb24oJ0VtYWlsOiAnLCAoZW1haWwpID0+IHtcbiAgICBybC5xdWVzdGlvbignUGFzc3dvcmQ6ICcsIChwYXNzMSkgPT4ge1xuICAgICAgcmwucXVlc3Rpb24oJ1JlcGVhdCBwYXNzd29yZDogJywgKHBhc3MyKSA9PiB7XG4gICAgICAgIGlmIChwYXNzMSAhPT0gcGFzczIpIHtcbiAgICAgICAgICBjb25zb2xlLmxvZygncGFzc3dvcmRzIGRvIG5vdCBtYXRjaCcpO1xuICAgICAgICAgIHByb2Nlc3MuZXhpdCgxKTtcbiAgICAgICAgfVxuXG4gICAgICAgIGNvbnN0IHBhc3NfdmFsaWRhdGlvbiA9IHZhbGlkYXRlUGFzc3dvcmQocGFzczEpO1xuICAgICAgICBjb25zdCBlbWFpbF92YWxpZGF0aW9uID0gdmFsaWRhdGVFbWFpbChlbWFpbCk7XG5cbiAgICAgICAgaWYgKHBhc3NfdmFsaWRhdGlvbiAhPT0gdHJ1ZSkge1xuICAgICAgICAgIGNvbnNvbGUubG9nKHBhc3NfdmFsaWRhdGlvbik7XG4gICAgICAgICAgcHJvY2Vzcy5leGl0KDEpO1xuICAgICAgICB9XG5cbiAgICAgICAgaWYgKGVtYWlsX3ZhbGlkYXRpb24gIT09IHRydWUpIHtcbiAgICAgICAgICBjb25zb2xlLmxvZyhlbWFpbF92YWxpZGF0aW9uKTtcbiAgICAgICAgICBwcm9jZXNzLmV4aXQoMSk7XG4gICAgICAgIH1cblxuICAgICAgICBjb25zdCBoYXNoZWRfcGFzc3dvcmQgPSBiY3J5cHQuaGFzaFN5bmMocGFzczEsIDgpO1xuXG4gICAgICAgIFVzZXIuY3JlYXRlKHsgZW1haWwsIHJvbGU6ICdhZG1pbicsIGhhc2hlZF9wYXNzd29yZCB9LCAoZXJyLCB1c2VyKSA9PiB7XG4gICAgICAgICAgaWYgKGVycikge1xuICAgICAgICAgICAgY29uc29sZS5sb2coZXJyKTtcbiAgICAgICAgICB9IGVsc2Uge1xuICAgICAgICAgICAgY29uc29sZS5sb2coJ1VzZXIgaGF2ZSBiZWVuIGFkZGVkIHN1Y2Nlc3NmdWxseScpO1xuICAgICAgICAgIH1cblxuICAgICAgICAgIHByb2Nlc3MuZXhpdCgxKTtcbiAgICAgICAgfSk7IFxuICAgICAgfSk7XG4gICAgfSk7XG4gIH0pO1xufVxuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "cli.js"
+      ],
+      "names": [
+        "init",
+        "makeAdmin",
+        "changePassword",
+        "createAdminUser",
+        "mongoose",
+        "connect",
+        "MONGO",
+        "url",
+        "options",
+        "then",
+        "catch",
+        "err",
+        "console",
+        "error",
+        "process",
+        "exit",
+        "User",
+        "log",
+        "Products",
+        "Cart",
+        "Order",
+        "rl",
+        "readline",
+        "createInterface",
+        "input",
+        "stdin",
+        "output",
+        "stdout",
+        "question",
+        "email",
+        "findOne",
+        "user",
+        "Error",
+        "role",
+        "save",
+        "e",
+        "pass1",
+        "pass2",
+        "pass_validation",
+        "hashed_password",
+        "bcrypt",
+        "hashSync",
+        "email_validation",
+        "create"
+      ],
+      "mappings": "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",
+      "file": "cli.js",
+      "sourceRoot": "/root/startup-milk/src",
+      "sourcesContent": [
+        "/* eslint-disable no-console */\n\nimport { MONGO } from 'data/config.private';\nimport { validatePassword, validateEmail } from 'helpers/validators';\nimport User from 'models/user';\nimport Products from 'models/products';\nimport Cart from 'models/cart';\nimport Order from 'models/order';\nimport mongoose from 'mongoose';\nimport readline from 'readline';\nimport bcrypt from 'bcryptjs';\n\nmongoose.connect(MONGO.url, MONGO.options).then(() => {\n\n}).catch((err) => {\n  console.error('Please check your MongoDB connection parameters');\n  process.exit(1);\n});\n\nexport function init() {\n  User.init()\n    .then(() => {\n      console.log('User init completed');\n      return Products.init();\n    })\n    .then(() => {\n      console.log('Product init completed');\n      return Cart.init();\n    })\n    .then(() => {\n      console.log('Cart init completed');\n      return Order.init();\n    })\n    .then(() => {\n      console.log('Order init completed');\n      process.exit(1);\n    })\n    .catch((err) => {\n      console.log(err);\n      process.exit(1);\n    });\n}\n\nexport function makeAdmin() {\n  const rl = readline.createInterface({\n    input: process.stdin,\n    output: process.stdout,\n  });\n\n  rl.question('Email: ', (email) => {\n    User.findOne({ email })\n      .then((user) => {\n        if (!user) {\n          throw new Error('User not found');\n        }\n\n        if (user.role === 'admin') {\n          throw new Error('User is already an admin');\n        }\n\n        user.role = 'admin';\n        return user.save();\n      })\n      .then((user) => {\n        console.log('done');\n        process.exit(1);\n      })\n      .catch((e) => {\n        console.log(e);\n        process.exit(1);\n      });\n  });\n}\n\nexport function changePassword() {\n  const rl = readline.createInterface({\n    input: process.stdin,\n    output: process.stdout,\n  });\n\n  rl.question('Email: ', (email) => {\n    rl.question('Password: ', (pass1) => {\n      rl.question('Repeat password: ', (pass2) => {\n        User.findOne({ email })\n          .then((user) => {\n            if (!user) {\n              throw new Error('User not found');\n            }\n\n            if (pass1 !== pass2) {\n              throw new Error('Password doesnt match');\n            }\n\n            const pass_validation = validatePassword(pass1);\n\n            if (pass_validation !== true) {\n              throw new Error(pass_validation);\n            }\n\n            user.hashed_password = bcrypt.hashSync(pass1, 8);\n            return user.save();\n          })\n          .then((user) => {\n            console.log('done');\n            process.exit(1);\n          })\n          .catch((e) => {\n            console.log(e);\n            process.exit(1);\n          });\n      });\n    });\n  });\n}\n\nexport function createAdminUser() {\n  const rl = readline.createInterface({\n    input: process.stdin,\n    output: process.stdout,\n  });\n\n  rl.question('Email: ', (email) => {\n    rl.question('Password: ', (pass1) => {\n      rl.question('Repeat password: ', (pass2) => {\n        if (pass1 !== pass2) {\n          console.log('passwords do not match');\n          process.exit(1);\n        }\n\n        const pass_validation = validatePassword(pass1);\n        const email_validation = validateEmail(email);\n\n        if (pass_validation !== true) {\n          console.log(pass_validation);\n          process.exit(1);\n        }\n\n        if (email_validation !== true) {\n          console.log(email_validation);\n          process.exit(1);\n        }\n\n        const hashed_password = bcrypt.hashSync(pass1, 8);\n\n        User.create({ email, role: 'admin', hashed_password }, (err, user) => {\n          if (err) {\n            console.log(err);\n          } else {\n            console.log('User have been added successfully');\n          }\n\n          process.exit(1);\n        }); \n      });\n    });\n  });\n}\n"
+      ]
+    },
+    "mtime": 1563649039091
+  },
+  "{\"filename\":\"/root/startup-milk/src/data/config.private.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/root/startup-milk/src/data\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3:dev": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [
+            "JWT_SECRET",
+            "MONGO",
+            "SMTP_USER",
+            "SMTP_PASS",
+            "SMTP_SERVICE",
+            "SMTP_FROM",
+            "STRIPE_SECRET_KEY",
+            "DEV_MODE"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "JWT_SECRET",
+              "exported": "JWT_SECRET"
+            },
+            {
+              "kind": "local",
+              "local": "MONGO",
+              "exported": "MONGO"
+            },
+            {
+              "kind": "local",
+              "local": "SMTP_USER",
+              "exported": "SMTP_USER"
+            },
+            {
+              "kind": "local",
+              "local": "SMTP_PASS",
+              "exported": "SMTP_PASS"
+            },
+            {
+              "kind": "local",
+              "local": "SMTP_SERVICE",
+              "exported": "SMTP_SERVICE"
+            },
+            {
+              "kind": "local",
+              "local": "SMTP_FROM",
+              "exported": "SMTP_FROM"
+            },
+            {
+              "kind": "local",
+              "local": "STRIPE_SECRET_KEY",
+              "exported": "STRIPE_SECRET_KEY"
+            },
+            {
+              "kind": "local",
+              "local": "DEV_MODE",
+              "exported": "DEV_MODE"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/root/startup-milk/src/data/config.private.js",
+      "filenameRelative": "/root/startup-milk/src/data/config.private.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "config.private.js",
+      "sourceFileName": "config.private.js",
+      "sourceRoot": "/root/startup-milk/src/data",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/root/startup-milk/src/data",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "config.private"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar JWT_SECRET = exports.JWT_SECRET = 'JWT_SECRET_HERE';\n\nvar MONGO = exports.MONGO = {\n  url: 'mongodb://testman:ftf51678@ds363996.mlab.com:63996/heroku_t23w9lqb',\n  options: {}\n};\n\nvar SMTP_USER = exports.SMTP_USER = 'from@example.com';\nvar SMTP_PASS = exports.SMTP_PASS = 'pass';\nvar SMTP_SERVICE = exports.SMTP_SERVICE = 'yandex';\nvar SMTP_FROM = exports.SMTP_FROM = SMTP_USER;\nvar STRIPE_SECRET_KEY = exports.STRIPE_SECRET_KEY = 'sk_test_mzuwrONi1LER5Kckjh9JtO7b00ugwIJBoK';\nvar DEV_MODE = exports.DEV_MODE = false;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbmZpZy5wcml2YXRlLmpzIl0sIm5hbWVzIjpbIkpXVF9TRUNSRVQiLCJNT05HTyIsInVybCIsIm9wdGlvbnMiLCJTTVRQX1VTRVIiLCJTTVRQX1BBU1MiLCJTTVRQX1NFUlZJQ0UiLCJTTVRQX0ZST00iLCJTVFJJUEVfU0VDUkVUX0tFWSIsIkRFVl9NT0RFIl0sIm1hcHBpbmdzIjoiOzs7OztBQUFPLElBQU1BLGtDQUFhLGlCQUFuQjs7QUFFQSxJQUFNQyx3QkFBUTtBQUNuQkMsT0FBSyxvRUFEYztBQUVuQkMsV0FBUztBQUZVLENBQWQ7O0FBS0EsSUFBTUMsZ0NBQVksa0JBQWxCO0FBQ0EsSUFBTUMsZ0NBQVksTUFBbEI7QUFDQSxJQUFNQyxzQ0FBZSxRQUFyQjtBQUNBLElBQU1DLGdDQUFZSCxTQUFsQjtBQUNBLElBQU1JLGdEQUFvQiw0Q0FBMUI7QUFDQSxJQUFNQyw4QkFBVyxLQUFqQiIsImZpbGUiOiJjb25maWcucHJpdmF0ZS5qcyIsInNvdXJjZVJvb3QiOiIvcm9vdC9zdGFydHVwLW1pbGsvc3JjL2RhdGEiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY29uc3QgSldUX1NFQ1JFVCA9ICdKV1RfU0VDUkVUX0hFUkUnO1xuXG5leHBvcnQgY29uc3QgTU9OR08gPSB7XG4gIHVybDogJ21vbmdvZGI6Ly90ZXN0bWFuOmZ0ZjUxNjc4QGRzMzYzOTk2Lm1sYWIuY29tOjYzOTk2L2hlcm9rdV90MjN3OWxxYicsXG4gIG9wdGlvbnM6IHt9LFxufTtcblxuZXhwb3J0IGNvbnN0IFNNVFBfVVNFUiA9ICdmcm9tQGV4YW1wbGUuY29tJztcbmV4cG9ydCBjb25zdCBTTVRQX1BBU1MgPSAncGFzcyc7XG5leHBvcnQgY29uc3QgU01UUF9TRVJWSUNFID0gJ3lhbmRleCc7XG5leHBvcnQgY29uc3QgU01UUF9GUk9NID0gU01UUF9VU0VSO1xuZXhwb3J0IGNvbnN0IFNUUklQRV9TRUNSRVRfS0VZID0gJ3NrX3Rlc3RfbXp1d3JPTmkxTEVSNUtja2poOUp0TzdiMDB1Z3dJSkJvSyc7XG5leHBvcnQgY29uc3QgREVWX01PREUgPSBmYWxzZTtcbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "config.private.js"
+      ],
+      "names": [
+        "JWT_SECRET",
+        "MONGO",
+        "url",
+        "options",
+        "SMTP_USER",
+        "SMTP_PASS",
+        "SMTP_SERVICE",
+        "SMTP_FROM",
+        "STRIPE_SECRET_KEY",
+        "DEV_MODE"
+      ],
+      "mappings": ";;;;;AAAO,IAAMA,kCAAa,iBAAnB;;AAEA,IAAMC,wBAAQ;AACnBC,OAAK,oEADc;AAEnBC,WAAS;AAFU,CAAd;;AAKA,IAAMC,gCAAY,kBAAlB;AACA,IAAMC,gCAAY,MAAlB;AACA,IAAMC,sCAAe,QAArB;AACA,IAAMC,gCAAYH,SAAlB;AACA,IAAMI,gDAAoB,4CAA1B;AACA,IAAMC,8BAAW,KAAjB",
+      "file": "config.private.js",
+      "sourceRoot": "/root/startup-milk/src/data",
+      "sourcesContent": [
+        "export const JWT_SECRET = 'JWT_SECRET_HERE';\n\nexport const MONGO = {\n  url: 'mongodb://testman:ftf51678@ds363996.mlab.com:63996/heroku_t23w9lqb',\n  options: {},\n};\n\nexport const SMTP_USER = 'from@example.com';\nexport const SMTP_PASS = 'pass';\nexport const SMTP_SERVICE = 'yandex';\nexport const SMTP_FROM = SMTP_USER;\nexport const STRIPE_SECRET_KEY = 'sk_test_mzuwrONi1LER5Kckjh9JtO7b00ugwIJBoK';\nexport const DEV_MODE = false;\n"
+      ]
+    },
+    "mtime": 1563649039135
+  },
+  "{\"filename\":\"/root/startup-milk/src/helpers/validators.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/root/startup-milk/src/helpers\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3:dev": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "data/categories",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "CATEGORIES_LIST"
+              }
+            ]
+          },
+          {
+            "source": "data/products-display",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "DISPLAY_LIST"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [
+            "validateEmail",
+            "email",
+            "validatePassword",
+            "password",
+            "validateProductCategory",
+            "category",
+            "validateProductDesc",
+            "desc",
+            "validateProductPrice",
+            "price",
+            "validateProductUrl",
+            "url",
+            "validateProductName",
+            "name",
+            "validateProductDisplay",
+            "display",
+            "validateProductYoutube",
+            "youtube"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "validateEmail",
+              "exported": "validateEmail"
+            },
+            {
+              "kind": "local",
+              "local": "email",
+              "exported": "email"
+            },
+            {
+              "kind": "local",
+              "local": "validatePassword",
+              "exported": "validatePassword"
+            },
+            {
+              "kind": "local",
+              "local": "password",
+              "exported": "password"
+            },
+            {
+              "kind": "local",
+              "local": "validateProductCategory",
+              "exported": "validateProductCategory"
+            },
+            {
+              "kind": "local",
+              "local": "category",
+              "exported": "category"
+            },
+            {
+              "kind": "local",
+              "local": "validateProductDesc",
+              "exported": "validateProductDesc"
+            },
+            {
+              "kind": "local",
+              "local": "desc",
+              "exported": "desc"
+            },
+            {
+              "kind": "local",
+              "local": "validateProductPrice",
+              "exported": "validateProductPrice"
+            },
+            {
+              "kind": "local",
+              "local": "price",
+              "exported": "price"
+            },
+            {
+              "kind": "local",
+              "local": "validateProductUrl",
+              "exported": "validateProductUrl"
+            },
+            {
+              "kind": "local",
+              "local": "url",
+              "exported": "url"
+            },
+            {
+              "kind": "local",
+              "local": "validateProductName",
+              "exported": "validateProductName"
+            },
+            {
+              "kind": "local",
+              "local": "name",
+              "exported": "name"
+            },
+            {
+              "kind": "local",
+              "local": "validateProductDisplay",
+              "exported": "validateProductDisplay"
+            },
+            {
+              "kind": "local",
+              "local": "display",
+              "exported": "display"
+            },
+            {
+              "kind": "local",
+              "local": "validateProductYoutube",
+              "exported": "validateProductYoutube"
+            },
+            {
+              "kind": "local",
+              "local": "youtube",
+              "exported": "youtube"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/root/startup-milk/src/helpers/validators.js",
+      "filenameRelative": "/root/startup-milk/src/helpers/validators.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "validators.js",
+      "sourceFileName": "validators.js",
+      "sourceRoot": "/root/startup-milk/src/helpers",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/root/startup-milk/src/helpers",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "validators"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.validateEmail = validateEmail;\nexports.validatePassword = validatePassword;\nexports.validateProductCategory = validateProductCategory;\nexports.validateProductDesc = validateProductDesc;\nexports.validateProductPrice = validateProductPrice;\nexports.validateProductUrl = validateProductUrl;\nexports.validateProductName = validateProductName;\nexports.validateProductDisplay = validateProductDisplay;\nexports.validateProductYoutube = validateProductYoutube;\n\nvar _categories = require('data/categories');\n\nvar _categories2 = _interopRequireDefault(_categories);\n\nvar _productsDisplay = require('data/products-display');\n\nvar _productsDisplay2 = _interopRequireDefault(_productsDisplay);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction validateEmail(email) {\n  if (!email) {\n    return 'The email cannot be empty';\n  }\n\n  if (typeof email !== 'string' || !email) {\n    return 'Please enter Email Address';\n  }\n\n  if (!email.match(/^[0-9a-z_.+-]+@[0-9a-z.]+$/i)) {\n    return 'The Email Address is in an invalid format';\n  }\n\n  return true;\n}\n\nfunction validatePassword(password) {\n  if (!password) {\n    return 'The password cannot be empty';\n  }\n\n  if (typeof password !== 'string') {\n    return 'The password is in an invalid format';\n  }\n\n  if (password.length < 8) {\n    return 'The password must be at least 8 characters';\n  }\n\n  if (password.length > 40) {\n    return 'The password must no more then 40 characters';\n  }\n\n  return true;\n}\n\nfunction validateProductCategory(category) {\n  if (!category) {\n    return 'The category cannot be empty';\n  }\n\n  if (_categories2.default[category] === undefined) {\n    return 'The category is invalid';\n  }\n\n  return true;\n}\n\nfunction validateProductDesc(desc) {\n  if (typeof desc !== 'string') {\n    return 'Please enter valid desc';\n  }\n\n  if (!desc) {\n    return true;\n  }\n\n  if (desc.length > 1000) {\n    return 'The desc must no more then 1000 characters';\n  }\n\n  return true;\n}\n\nfunction validateProductPrice(price) {\n  price = parseFloat(price);\n\n  if (isNaN(price)) {\n    return 'Please enter valid price';\n  }\n\n  if (price < 0) {\n    return 'The price cannot be negative';\n  }\n\n  if (price > 1000000) {\n    return 'The price is too big';\n  }\n\n  return true;\n}\n\nfunction validateProductUrl(url) {\n  if (!url) {\n    return 'The url cannot be empty';\n  }\n\n  if (url.length < 1) {\n    return 'The url must be at least 1 character';\n  }\n\n  if (url.length > 60) {\n    return 'The url must no more then 60 characters';\n  }\n\n  if (!url.match(/^[0-9a-z_-]+$/)) {\n    return 'The url contains invalid symbols';\n  }\n\n  return true;\n}\n\nfunction validateProductName(name) {\n  if (!name) {\n    return 'The name cannot be empty';\n  }\n\n  if (name.length < 1) {\n    return 'The name must be at least 1 character';\n  }\n\n  if (name.length > 60) {\n    return 'The name must no more then 60 characters';\n  }\n\n  if (!name.match(/^[0-9a-z_!@#$& -]+$/i)) {\n    return 'The name contains invalid symbols';\n  }\n\n  return true;\n}\n\nfunction validateProductDisplay(display) {\n  if (!display || typeof display !== 'string') return 'Invalid dipslay';\n  if (_productsDisplay2.default[display] === undefined) return 'The category is invalid';\n  return true;\n}\n\nfunction validateProductYoutube(youtube) {\n  if (typeof youtube !== 'string') return 'Invalid youtube link';\n  if (youtube && !youtube.match(/^(https?:\\/\\/)?(www\\.)?youtube\\.com\\/watch\\?v=[0-9a-z_-]+$/gi)) return 'Invalid youtube link';\n  return true;\n}\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInZhbGlkYXRvcnMuanMiXSwibmFtZXMiOlsidmFsaWRhdGVFbWFpbCIsInZhbGlkYXRlUGFzc3dvcmQiLCJ2YWxpZGF0ZVByb2R1Y3RDYXRlZ29yeSIsInZhbGlkYXRlUHJvZHVjdERlc2MiLCJ2YWxpZGF0ZVByb2R1Y3RQcmljZSIsInZhbGlkYXRlUHJvZHVjdFVybCIsInZhbGlkYXRlUHJvZHVjdE5hbWUiLCJ2YWxpZGF0ZVByb2R1Y3REaXNwbGF5IiwidmFsaWRhdGVQcm9kdWN0WW91dHViZSIsImVtYWlsIiwibWF0Y2giLCJwYXNzd29yZCIsImxlbmd0aCIsImNhdGVnb3J5IiwiQ0FURUdPUklFU19MSVNUIiwidW5kZWZpbmVkIiwiZGVzYyIsInByaWNlIiwicGFyc2VGbG9hdCIsImlzTmFOIiwidXJsIiwibmFtZSIsImRpc3BsYXkiLCJESVNQTEFZX0xJU1QiLCJ5b3V0dWJlIl0sIm1hcHBpbmdzIjoiOzs7OztRQUdnQkEsYSxHQUFBQSxhO1FBZ0JBQyxnQixHQUFBQSxnQjtRQW9CQUMsdUIsR0FBQUEsdUI7UUFZQUMsbUIsR0FBQUEsbUI7UUFnQkFDLG9CLEdBQUFBLG9CO1FBa0JBQyxrQixHQUFBQSxrQjtRQW9CQUMsbUIsR0FBQUEsbUI7UUFvQkFDLHNCLEdBQUFBLHNCO1FBTUFDLHNCLEdBQUFBLHNCOztBQW5JaEI7Ozs7QUFDQTs7Ozs7O0FBRU8sU0FBU1IsYUFBVCxDQUF1QlMsS0FBdkIsRUFBOEI7QUFDbkMsTUFBSSxDQUFDQSxLQUFMLEVBQVk7QUFDVixXQUFPLDJCQUFQO0FBQ0Q7O0FBRUQsTUFBSSxPQUFPQSxLQUFQLEtBQWlCLFFBQWpCLElBQTZCLENBQUNBLEtBQWxDLEVBQXlDO0FBQ3ZDLFdBQU8sNEJBQVA7QUFDRDs7QUFFRCxNQUFJLENBQUNBLE1BQU1DLEtBQU4sQ0FBWSw2QkFBWixDQUFMLEVBQWlEO0FBQy9DLFdBQU8sMkNBQVA7QUFDRDs7QUFFRCxTQUFPLElBQVA7QUFDRDs7QUFFTSxTQUFTVCxnQkFBVCxDQUEwQlUsUUFB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Q0EsUUFBUWQsS0FBUixDQUFjLDhEQUFkLENBQWhCLEVBQStGLE9BQU8sc0JBQVA7QUFDL0YsU0FBTyxJQUFQO0FBQ0QiLCJmaWxlIjoidmFsaWRhdG9ycy5qcyIsInNvdXJjZVJvb3QiOiIvcm9vdC9zdGFydHVwLW1pbGsvc3JjL2hlbHBlcnMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgQ0FURUdPUklFU19MSVNUIGZyb20gJ2RhdGEvY2F0ZWdvcmllcyc7XG5pbXBvcnQgRElTUExBWV9MSVNUIGZyb20gJ2RhdGEvcHJvZHVjdHMtZGlzcGxheSc7XG5cbmV4cG9ydCBmdW5jdGlvbiB2YWxpZGF0ZUVtYWlsKGVtYWlsKSB7XG4gIGlmICghZW1haWwpIHtcbiAgICByZXR1cm4gJ1RoZSBlbWFpbCBjYW5ub3QgYmUgZW1wdHknO1xuICB9XG5cbiAgaWYgKHR5cGVvZiBlbWFpbCAhPT0gJ3N0cmluZycgfHwgIWVtYWlsKSB7XG4gICAgcmV0dXJuICdQbGVhc2UgZW50ZXIgRW1haWwgQWRkcmVzcyc7XG4gIH1cblxuICBpZiAoIWVtYWlsLm1hdGNoKC9eWzAtOWEtel8uKy1dK0BbMC05YS16Ll0rJC9pKSkge1xuICAgIHJldHVybiAnVGhlIEVtYWlsIEFkZHJlc3MgaXMgaW4gYW4gaW52YWxpZCBmb3JtYXQnO1xuICB9XG5cbiAgcmV0dXJuIHRydWU7XG59XG5cbmV4cG9ydCBmdW5jdGlvbiB2YWxpZGF0ZVBhc3N3b3JkKHBhc3N3b3JkKSB7XG4gIGlmICghcGFzc3dvcmQpIHtcbiAgICByZXR1cm4gJ1RoZSBwYXNzd29yZCBjYW5ub3QgYmUgZW1wdHknO1xuICB9XG5cbiAgaWYgKHR5cGVvZiBwYXNzd29yZCAhPT0gJ3N0cmluZycpIHtcbiAgICByZXR1cm4gJ1RoZSBwYXNzd29yZCBpcyBpbiBhbiBpbnZhbGlkIGZvcm1hdCc7XG4gIH1cblxuICBpZiAocGFzc3dvcmQubGVuZ3RoIDwgOCkge1xuICAgIHJldHVybiAnVGhlIHBhc3N3b3JkIG11c3QgYmUgYXQgbGVhc3QgOCBjaGFyYWN0ZXJzJztcbiAgfVxuXG4gIGlmIChwYXNzd29yZC5sZW5ndGggPiA0MCkge1xuICAgIHJldHVybiAnVGhlIHBhc3N3b3JkIG11c3Qgbm8gbW9yZSB0aGVuIDQwIGNoYXJhY3RlcnMnO1xuICB9XG5cbiAgcmV0dXJuIHRydWU7XG59XG5cbmV4cG9ydCBmdW5jdGlvbiB2YWxpZGF0ZVByb2R1Y3RDYXRlZ29yeShjYXRlZ29yeSkge1xuICBpZiAoIWNhdGVnb3J5KSB7XG4gICAgcmV0dXJuICdUaGUgY2F0ZWdvcnkgY2Fubm90IGJlIGVtcHR5JztcbiAgfVxuXG4gIGlmIChDQVRFR09SSUVTX0xJU1RbY2F0ZWdvcnldID09PSB1bmRlZmluZWQpIHtcbiAgICByZXR1cm4gJ1RoZSBjYXRlZ29yeSBpcyBpbnZhbGlkJztcbiAgfVxuXG4gIHJldHVybiB0cnVlO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gdmFsaWRhdGVQcm9kdWN0RGVzYyhkZXNjKSB7XG4gIGlmICh0eXBlb2YgZGVzYyAhPT0gJ3N0cmluZycpIHtcbiAgICByZXR1cm4gJ1BsZWFzZSBlbnRlciB2YWxpZCBkZXNjJztcbiAgfVxuXG4gIGlmICghZGVzYykge1xuICAgIHJldHVybiB0cnVlO1xuICB9XG5cbiAgaWYgKGRlc2MubGVuZ3RoID4gMTAwMCkge1xuICAgIHJldHVybiAnVGhlIGRlc2MgbXVzdCBubyBtb3JlIHRoZW4gMTAwMCBjaGFyYWN0ZXJzJztcbiAgfVxuXG4gIHJldHVybiB0cnVlO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gdmFsaWRhdGVQcm9kdWN0UHJpY2UocHJpY2UpIHtcbiAgcHJpY2UgPSBwYXJzZUZsb2F0KHByaWNlKTtcblxuICBpZiAoaXNOYU4ocHJpY2UpKSB7XG4gICAgcmV0dXJuICdQbGVhc2UgZW50ZXIgdmFsaWQgcHJpY2UnO1xuICB9XG5cbiAgaWYgKHByaWNlIDwgMCkge1xuICAgIHJldHVybiAnVGhlIHByaWNlIGNhbm5vdCBiZSBuZWdhdGl2ZSc7XG4gIH1cblxuICBpZiAocHJpY2UgPiAxMDAwMDAwKSB7XG4gICAgcmV0dXJuICdUaGUgcHJpY2UgaXMgdG9vIGJpZyc7XG4gIH1cblxuICByZXR1cm4gdHJ1ZTtcbn1cblxuZXhwb3J0IGZ1bmN0aW9uIHZhbGlkYXRlUHJvZHVjdFVybCh1cmwpIHtcbiAgaWYgKCF1cmwpIHtcbiAgICByZXR1cm4gJ1RoZSB1cmwgY2Fubm90IGJlIGVtcHR5JztcbiAgfVxuXG4gIGlmICh1cmwubGVuZ3RoIDwgMSkge1xuICAgIHJldHVybiAnVGhlIHVybCBtdXN0IGJlIGF0IGxlYXN0IDEgY2hhcmFjdGVyJztcbiAgfVxuXG4gIGlmICh1cmwubGVuZ3RoID4gNjApIHtcbiAgICByZXR1cm4gJ1RoZSB1cmwgbXVzdCBubyBtb3JlIHRoZW4gNjAgY2hhcmFjdGVycyc7XG4gIH1cblxuICBpZiAoIXVybC5tYXRjaCgvXlswLTlhLXpfLV0rJC8pKSB7XG4gICAgcmV0dXJuICdUaGUgdXJsIGNvbnRhaW5zIGludmFsaWQgc3ltYm9scyc7XG4gIH1cblxuICByZXR1cm4gdHJ1ZTtcbn1cblxuZXhwb3J0IGZ1bmN0aW9uIHZhbGlkYXRlUHJvZHVjdE5hbWUobmFtZSkge1xuICBpZiAoIW5hbWUpIHtcbiAgICByZXR1cm4gJ1RoZSBuYW1lIGNhbm5vdCBiZSBlbXB0eSc7XG4gIH1cblxuICBpZiAobmFtZS5sZW5ndGggPCAxKSB7XG4gICAgcmV0dXJuICdUaGUgbmFtZSBtdXN0IGJlIGF0IGxlYXN0IDEgY2hhcmFjdGVyJztcbiAgfVxuXG4gIGlmIChuYW1lLmxlbmd0aCA+IDYwKSB7XG4gICAgcmV0dXJuICdUaGUgbmFtZSBtdXN0IG5vIG1vcmUgdGhlbiA2MCBjaGFyYWN0ZXJzJztcbiAgfVxuXG4gIGlmICghbmFtZS5tYXRjaCgvXlswLTlhLXpfIUAjJCYgLV0rJC9pKSkge1xuICAgIHJldHVybiAnVGhlIG5hbWUgY29udGFpbnMgaW52YWxpZCBzeW1ib2xzJztcbiAgfVxuXG4gIHJldHVybiB0cnVlO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gdmFsaWRhdGVQcm9kdWN0RGlzcGxheShkaXNwbGF5KSB7XG4gIGlmICghZGlzcGxheSB8fCB0eXBlb2YgZGlzcGxheSAhPT0gJ3N0cmluZycpIHJldHVybiAnSW52YWxpZCBkaXBzbGF5JztcbiAgaWYgKERJU1BMQVlfTElTVFtkaXNwbGF5XSA9PT0gdW5kZWZpbmVkKSByZXR1cm4gJ1RoZSBjYXRlZ29yeSBpcyBpbnZhbGlkJztcbiAgcmV0dXJuIHRydWU7XG59XG5cbmV4cG9ydCBmdW5jdGlvbiB2YWxpZGF0ZVByb2R1Y3RZb3V0dWJlKHlvdXR1YmUpIHtcbiAgaWYgKHR5cGVvZiB5b3V0dWJlICE9PSAnc3RyaW5nJykgcmV0dXJuICdJbnZhbGlkIHlvdXR1YmUgbGluayc7XG4gIGlmICh5b3V0dWJlICYmICF5b3V0dWJlLm1hdGNoKC9eKGh0dHBzPzpcXC9cXC8pPyh3d3dcXC4pP3lvdXR1YmVcXC5jb21cXC93YXRjaFxcP3Y9WzAtOWEtel8tXSskL2dpKSkgcmV0dXJuICdJbnZhbGlkIHlvdXR1YmUgbGluayc7XG4gIHJldHVybiB0cnVlO1xufVxuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "validators.js"
+      ],
+      "names": [
+        "validateEmail",
+        "validatePassword",
+        "validateProductCategory",
+        "validateProductDesc",
+        "validateProductPrice",
+        "validateProductUrl",
+        "validateProductName",
+        "validateProductDisplay",
+        "validateProductYoutube",
+        "email",
+        "match",
+        "password",
+        "length",
+        "category",
+        "CATEGORIES_LIST",
+        "undefined",
+        "desc",
+        "price",
+        "parseFloat",
+        "isNaN",
+        "url",
+        "name",
+        "display",
+        "DISPLAY_LIST",
+        "youtube"
+      ],
+      "mappings": "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",
+      "file": "validators.js",
+      "sourceRoot": "/root/startup-milk/src/helpers",
+      "sourcesContent": [
+        "import CATEGORIES_LIST from 'data/categories';\nimport DISPLAY_LIST from 'data/products-display';\n\nexport function validateEmail(email) {\n  if (!email) {\n    return 'The email cannot be empty';\n  }\n\n  if (typeof email !== 'string' || !email) {\n    return 'Please enter Email Address';\n  }\n\n  if (!email.match(/^[0-9a-z_.+-]+@[0-9a-z.]+$/i)) {\n    return 'The Email Address is in an invalid format';\n  }\n\n  return true;\n}\n\nexport function validatePassword(password) {\n  if (!password) {\n    return 'The password cannot be empty';\n  }\n\n  if (typeof password !== 'string') {\n    return 'The password is in an invalid format';\n  }\n\n  if (password.length < 8) {\n    return 'The password must be at least 8 characters';\n  }\n\n  if (password.length > 40) {\n    return 'The password must no more then 40 characters';\n  }\n\n  return true;\n}\n\nexport function validateProductCategory(category) {\n  if (!category) {\n    return 'The category cannot be empty';\n  }\n\n  if (CATEGORIES_LIST[category] === undefined) {\n    return 'The category is invalid';\n  }\n\n  return true;\n}\n\nexport function validateProductDesc(desc) {\n  if (typeof desc !== 'string') {\n    return 'Please enter valid desc';\n  }\n\n  if (!desc) {\n    return true;\n  }\n\n  if (desc.length > 1000) {\n    return 'The desc must no more then 1000 characters';\n  }\n\n  return true;\n}\n\nexport function validateProductPrice(price) {\n  price = parseFloat(price);\n\n  if (isNaN(price)) {\n    return 'Please enter valid price';\n  }\n\n  if (price < 0) {\n    return 'The price cannot be negative';\n  }\n\n  if (price > 1000000) {\n    return 'The price is too big';\n  }\n\n  return true;\n}\n\nexport function validateProductUrl(url) {\n  if (!url) {\n    return 'The url cannot be empty';\n  }\n\n  if (url.length < 1) {\n    return 'The url must be at least 1 character';\n  }\n\n  if (url.length > 60) {\n    return 'The url must no more then 60 characters';\n  }\n\n  if (!url.match(/^[0-9a-z_-]+$/)) {\n    return 'The url contains invalid symbols';\n  }\n\n  return true;\n}\n\nexport function validateProductName(name) {\n  if (!name) {\n    return 'The name cannot be empty';\n  }\n\n  if (name.length < 1) {\n    return 'The name must be at least 1 character';\n  }\n\n  if (name.length > 60) {\n    return 'The name must no more then 60 characters';\n  }\n\n  if (!name.match(/^[0-9a-z_!@#$& -]+$/i)) {\n    return 'The name contains invalid symbols';\n  }\n\n  return true;\n}\n\nexport function validateProductDisplay(display) {\n  if (!display || typeof display !== 'string') return 'Invalid dipslay';\n  if (DISPLAY_LIST[display] === undefined) return 'The category is invalid';\n  return true;\n}\n\nexport function validateProductYoutube(youtube) {\n  if (typeof youtube !== 'string') return 'Invalid youtube link';\n  if (youtube && !youtube.match(/^(https?:\\/\\/)?(www\\.)?youtube\\.com\\/watch\\?v=[0-9a-z_-]+$/gi)) return 'Invalid youtube link';\n  return true;\n}\n"
+      ]
+    },
+    "mtime": 1563649039135
+  },
+  "{\"filename\":\"/root/startup-milk/src/data/categories.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/root/startup-milk/src/data\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3:dev": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/root/startup-milk/src/data/categories.js",
+      "filenameRelative": "/root/startup-milk/src/data/categories.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "categories.js",
+      "sourceFileName": "categories.js",
+      "sourceRoot": "/root/startup-milk/src/data",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/root/startup-milk/src/data",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "categories"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  'startup-kits': {\n    text: 'Startup kits',\n    color: '#ffab00'\n  },\n  icons: {\n    text: 'Icons',\n    color: '#00caff'\n  },\n  motion: {\n    text: 'Motion',\n    color: '#be6ad7'\n  }\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNhdGVnb3JpZXMuanMiXSwibmFtZXMiOlsidGV4dCIsImNvbG9yIiwiaWNvbnMiLCJtb3Rpb24iXSwibWFwcGluZ3MiOiI7Ozs7O2tCQUFlO0FBQ2Isa0JBQWdCO0FBQ2RBLFVBQU0sY0FEUTtBQUVkQyxXQUFPO0FBRk8sR0FESDtBQUtiQyxTQUFPO0FBQ0xGLFVBQU0sT0FERDtBQUVMQyxXQUFPO0FBRkYsR0FMTTtBQVNiRSxVQUFRO0FBQ05ILFVBQU0sUUFEQTtBQUVOQyxXQUFPO0FBRkQ7QUFUSyxDIiwiZmlsZSI6ImNhdGVnb3JpZXMuanMiLCJzb3VyY2VSb290IjoiL3Jvb3Qvc3RhcnR1cC1taWxrL3NyYy9kYXRhIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQge1xuICAnc3RhcnR1cC1raXRzJzoge1xuICAgIHRleHQ6ICdTdGFydHVwIGtpdHMnLFxuICAgIGNvbG9yOiAnI2ZmYWIwMCcsXG4gIH0sXG4gIGljb25zOiB7XG4gICAgdGV4dDogJ0ljb25zJyxcbiAgICBjb2xvcjogJyMwMGNhZmYnLFxuICB9LFxuICBtb3Rpb246IHtcbiAgICB0ZXh0OiAnTW90aW9uJyxcbiAgICBjb2xvcjogJyNiZTZhZDcnLFxuICB9LFxufTtcbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "categories.js"
+      ],
+      "names": [
+        "text",
+        "color",
+        "icons",
+        "motion"
+      ],
+      "mappings": ";;;;;kBAAe;AACb,kBAAgB;AACdA,UAAM,cADQ;AAEdC,WAAO;AAFO,GADH;AAKbC,SAAO;AACLF,UAAM,OADD;AAELC,WAAO;AAFF,GALM;AASbE,UAAQ;AACNH,UAAM,QADA;AAENC,WAAO;AAFD;AATK,C",
+      "file": "categories.js",
+      "sourceRoot": "/root/startup-milk/src/data",
+      "sourcesContent": [
+        "export default {\n  'startup-kits': {\n    text: 'Startup kits',\n    color: '#ffab00',\n  },\n  icons: {\n    text: 'Icons',\n    color: '#00caff',\n  },\n  motion: {\n    text: 'Motion',\n    color: '#be6ad7',\n  },\n};\n"
+      ]
+    },
+    "mtime": 1563649039135
+  },
+  "{\"filename\":\"/root/startup-milk/src/data/products-display.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/root/startup-milk/src/data\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3:dev": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/root/startup-milk/src/data/products-display.js",
+      "filenameRelative": "/root/startup-milk/src/data/products-display.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "products-display.js",
+      "sourceFileName": "products-display.js",
+      "sourceRoot": "/root/startup-milk/src/data",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/root/startup-milk/src/data",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "products-display"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  normal: 'Normal product',\n  fintech: 'Fintech startup'\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2R1Y3RzLWRpc3BsYXkuanMiXSwibmFtZXMiOlsibm9ybWFsIiwiZmludGVjaCJdLCJtYXBwaW5ncyI6Ijs7Ozs7a0JBQWU7QUFDYkEsVUFBUSxnQkFESztBQUViQyxXQUFTO0FBRkksQyIsImZpbGUiOiJwcm9kdWN0cy1kaXNwbGF5LmpzIiwic291cmNlUm9vdCI6Ii9yb290L3N0YXJ0dXAtbWlsay9zcmMvZGF0YSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IHtcbiAgbm9ybWFsOiAnTm9ybWFsIHByb2R1Y3QnLFxuICBmaW50ZWNoOiAnRmludGVjaCBzdGFydHVwJyxcbn07XG4iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "products-display.js"
+      ],
+      "names": [
+        "normal",
+        "fintech"
+      ],
+      "mappings": ";;;;;kBAAe;AACbA,UAAQ,gBADK;AAEbC,WAAS;AAFI,C",
+      "file": "products-display.js",
+      "sourceRoot": "/root/startup-milk/src/data",
+      "sourcesContent": [
+        "export default {\n  normal: 'Normal product',\n  fintech: 'Fintech startup',\n};\n"
+      ]
+    },
+    "mtime": 1563649039135
+  },
+  "{\"filename\":\"/root/startup-milk/src/models/user.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/root/startup-milk/src/models\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3:dev": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "mongoose",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "mongoose"
+              }
+            ]
+          },
+          {
+            "source": "bcryptjs",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "bcrypt"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/root/startup-milk/src/models/user.js",
+      "filenameRelative": "/root/startup-milk/src/models/user.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "user.js",
+      "sourceFileName": "user.js",
+      "sourceRoot": "/root/startup-milk/src/models",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/root/startup-milk/src/models",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "user"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _mongoose = require('mongoose');\n\nvar _mongoose2 = _interopRequireDefault(_mongoose);\n\nvar _bcryptjs = require('bcryptjs');\n\nvar _bcryptjs2 = _interopRequireDefault(_bcryptjs);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Schema = _mongoose2.default.Schema;\n\nvar UserSchema = new Schema({\n  email: {\n    type: String,\n    unique: true,\n    lowercase: true,\n    index: true,\n    required: true\n  },\n  role: {\n    type: String,\n    trim: true,\n    default: 'user'\n  },\n  hashed_password: {\n    type: String,\n    trim: true,\n    required: true\n  },\n  have_paid: {\n    type: Boolean,\n    default: false\n  },\n  have_downloaded: {\n    type: Boolean,\n    default: true\n  },\n  subscribe: {\n    type: Boolean,\n    default: false\n  },\n  created: {\n    type: Date,\n    default: Date.now\n  }\n}, { collection: 'users', strict: true });\n\nUserSchema.methods.toClientJSON = function () {\n  return {\n    email: this.email,\n    role: this.role,\n    _id: this._id,\n    have_paid: this.have_paid,\n    have_downloaded: this.have_downloaded,\n    subscribe: this.subscribe\n  };\n};\n\nUserSchema.methods.comparePassword = function (password) {\n  return _bcryptjs2.default.compareSync(password, this.hashed_password);\n};\n\nexports.default = _mongoose2.default.model('User', UserSchema);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVzZXIuanMiXSwibmFtZXMiOlsiU2NoZW1hIiwibW9uZ29vc2UiLCJVc2VyU2NoZW1hIiwiZW1haWwiLCJ0eXBlIiwiU3RyaW5nIiwidW5pcXVlIiwibG93ZXJjYXNlIiwiaW5kZXgiLCJyZXF1aXJlZCIsInJvbGUiLCJ0cmltIiwiZGVmYXVsdCIsImhhc2hlZF9wYXNzd29yZCIsImhhdmVfcGFpZCIsIkJvb2xlYW4iLCJoYXZlX2Rvd25sb2FkZWQiLCJzdWJzY3JpYmUiLCJjcmVhdGVkIiwiRGF0ZSIsIm5vdyIsImNvbGxlY3Rpb24iLCJzdHJpY3QiLCJtZXRob2RzIiwidG9DbGllbnRKU09OIiwiX2lkIiwiY29tcGFyZVBhc3N3b3JkIiwicGFzc3dvcmQiLCJiY3J5cHQiLCJjb21wYXJlU3luYyIsIm1vZGVsIl0sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQTs7OztBQUNBOzs7Ozs7QUFFQSxJQUFNQSxTQUFTQyxtQkFBU0QsTUFBeEI7O0FBRUEsSUFBTUUsYUFBYSxJQUFJRixNQUFKLENBQVc7QUFDNUJHLFNBQU87QUFDTEMsVUFBTUMsTUFERDtBQUVMQyxZQUFRLElBRkg7QUFHTEMsZUFBVyxJQUhOO0FBSUxDLFdBQU8sSUFKRjtBQUtMQyxjQUFVO0FBTEwsR0FEcUI7QUFRNUJDLFFBQU07QUFDSk4sVUFBTUMsTUFERjtBQUVKTSxVQUFNLElBRkY7QUFHSkMsYUFBUztBQUhMLEdBUnNCO0FBYTVCQyxtQkFBaUI7QUFDZlQsVUFBTUMsTUFEUztBQUVmTSxVQUFNLElBRlM7QUFHZkYsY0FBVTtBQUhLLEdBYlc7QUFrQjVCSyxhQUFXO0FBQ1RWLFVBQU1XLE9BREc7QUFFVEgsYUFBUztBQUZBLEdBbEJpQjtBQXNCNUJJLG1CQUFpQjtBQUNmWixVQUFNVyxPQURTO0FBRWZILGFBQVM7QUFGTSxHQXRCVztBQTBCNUJLLGFBQVc7QUFDVGIsVUFBTVcsT0FERztBQUVUSCxhQUFTO0FBRkEsR0ExQmlCO0FBOEI1Qk0sV0FBUztBQUNQZCxVQUFNZSxJQURDO0FBRVBQLGFBQVNPLEtBQUtDO0FBRlA7QUE5Qm1CLENBQVgsRUFrQ2hCLEVBQUVDLFlBQVksT0FBZCxFQUF1QkMsUUFBUSxJQUEvQixFQWxDZ0IsQ0FBbkI7O0FBb0NBcEIsV0FBV3FCLE9BQVgsQ0FBbUJDLFlBQW5CLEdBQWtDLFlBQVk7QUFDNUMsU0FBTztBQUNMckIsV0FBTyxLQUFLQSxLQURQO0FBRUxPLFVBQU0sS0FBS0EsSUFGTjtBQUdMZSxTQUFLLEtBQUtBLEdBSEw7QUFJTFgsZUFBVyxLQUFLQSxTQUpYO0FBS0xFLHFCQUFpQixLQUFLQSxlQUxqQjtBQU1MQyxlQUFXLEtBQUtBO0FBTlgsR0FBUDtBQVFELENBVEQ7O0FBV0FmLFdBQVdxQixPQUFYLENBQW1CRyxlQUFuQixHQUFxQyxVQUFVQyxRQUFWLEVBQW9CO0FBQ3ZELFNBQU9DLG1CQUFPQyxXQUFQLENBQW1CRixRQUFuQixFQUE2QixLQUFLZCxlQUFsQyxDQUFQO0FBQ0QsQ0FGRDs7a0JBSWVaLG1CQUFTNkIsS0FBVCxDQUFlLE1BQWYsRUFBdUI1QixVQUF2QixDIiwiZmlsZSI6InVzZXIuanMiLCJzb3VyY2VSb290IjoiL3Jvb3Qvc3RhcnR1cC1taWxrL3NyYy9tb2RlbHMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgbW9uZ29vc2UgZnJvbSAnbW9uZ29vc2UnO1xuaW1wb3J0IGJjcnlwdCBmcm9tICdiY3J5cHRqcyc7XG5cbmNvbnN0IFNjaGVtYSA9IG1vbmdvb3NlLlNjaGVtYTtcblxuY29uc3QgVXNlclNjaGVtYSA9IG5ldyBTY2hlbWEoe1xuICBlbWFpbDoge1xuICAgIHR5cGU6IFN0cmluZyxcbiAgICB1bmlxdWU6IHRydWUsXG4gICAgbG93ZXJjYXNlOiB0cnVlLFxuICAgIGluZGV4OiB0cnVlLFxuICAgIHJlcXVpcmVkOiB0cnVlLFxuICB9LFxuICByb2xlOiB7XG4gICAgdHlwZTogU3RyaW5nLFxuICAgIHRyaW06IHRydWUsXG4gICAgZGVmYXVsdDogJ3VzZXInLFxuICB9LFxuICBoYXNoZWRfcGFzc3dvcmQ6IHtcbiAgICB0eXBlOiBTdHJpbmcsXG4gICAgdHJpbTogdHJ1ZSxcbiAgICByZXF1aXJlZDogdHJ1ZSxcbiAgfSxcbiAgaGF2ZV9wYWlkOiB7XG4gICAgdHlwZTogQm9vbGVhbixcbiAgICBkZWZhdWx0OiBmYWxzZSxcbiAgfSxcbiAgaGF2ZV9kb3dubG9hZGVkOiB7XG4gICAgdHlwZTogQm9vbGVhbixcbiAgICBkZWZhdWx0OiB0cnVlLFxuICB9LFxuICBzdWJzY3JpYmU6IHtcbiAgICB0eXBlOiBCb29sZWFuLFxuICAgIGRlZmF1bHQ6IGZhbHNlLFxuICB9LFxuICBjcmVhdGVkOiB7XG4gICAgdHlwZTogRGF0ZSxcbiAgICBkZWZhdWx0OiBEYXRlLm5vdyxcbiAgfSxcbn0sIHsgY29sbGVjdGlvbjogJ3VzZXJzJywgc3RyaWN0OiB0cnVlIH0pO1xuXG5Vc2VyU2NoZW1hLm1ldGhvZHMudG9DbGllbnRKU09OID0gZnVuY3Rpb24gKCkge1xuICByZXR1cm4ge1xuICAgIGVtYWlsOiB0aGlzLmVtYWlsLFxuICAgIHJvbGU6IHRoaXMucm9sZSxcbiAgICBfaWQ6IHRoaXMuX2lkLFxuICAgIGhhdmVfcGFpZDogdGhpcy5oYXZlX3BhaWQsXG4gICAgaGF2ZV9kb3dubG9hZGVkOiB0aGlzLmhhdmVfZG93bmxvYWRlZCxcbiAgICBzdWJzY3JpYmU6IHRoaXMuc3Vic2NyaWJlLFxuICB9O1xufTtcblxuVXNlclNjaGVtYS5tZXRob2RzLmNvbXBhcmVQYXNzd29yZCA9IGZ1bmN0aW9uIChwYXNzd29yZCkge1xuICByZXR1cm4gYmNyeXB0LmNvbXBhcmVTeW5jKHBhc3N3b3JkLCB0aGlzLmhhc2hlZF9wYXNzd29yZCk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBtb25nb29zZS5tb2RlbCgnVXNlcicsIFVzZXJTY2hlbWEpO1xuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "user.js"
+      ],
+      "names": [
+        "Schema",
+        "mongoose",
+        "UserSchema",
+        "email",
+        "type",
+        "String",
+        "unique",
+        "lowercase",
+        "index",
+        "required",
+        "role",
+        "trim",
+        "default",
+        "hashed_password",
+        "have_paid",
+        "Boolean",
+        "have_downloaded",
+        "subscribe",
+        "created",
+        "Date",
+        "now",
+        "collection",
+        "strict",
+        "methods",
+        "toClientJSON",
+        "_id",
+        "comparePassword",
+        "password",
+        "bcrypt",
+        "compareSync",
+        "model"
+      ],
+      "mappings": ";;;;;;AAAA;;;;AACA;;;;;;AAEA,IAAMA,SAASC,mBAASD,MAAxB;;AAEA,IAAME,aAAa,IAAIF,MAAJ,CAAW;AAC5BG,SAAO;AACLC,UAAMC,MADD;AAELC,YAAQ,IAFH;AAGLC,eAAW,IAHN;AAILC,WAAO,IAJF;AAKLC,cAAU;AALL,GADqB;AAQ5BC,QAAM;AACJN,UAAMC,MADF;AAEJM,UAAM,IAFF;AAGJC,aAAS;AAHL,GARsB;AAa5BC,mBAAiB;AACfT,UAAMC,MADS;AAEfM,UAAM,IAFS;AAGfF,cAAU;AAHK,GAbW;AAkB5BK,aAAW;AACTV,UAAMW,OADG;AAETH,aAAS;AAFA,GAlBiB;AAsB5BI,mBAAiB;AACfZ,UAAMW,OADS;AAEfH,aAAS;AAFM,GAtBW;AA0B5BK,aAAW;AACTb,UAAMW,OADG;AAETH,aAAS;AAFA,GA1BiB;AA8B5BM,WAAS;AACPd,UAAMe,IADC;AAEPP,aAASO,KAAKC;AAFP;AA9BmB,CAAX,EAkChB,EAAEC,YAAY,OAAd,EAAuBC,QAAQ,IAA/B,EAlCgB,CAAnB;;AAoCApB,WAAWqB,OAAX,CAAmBC,YAAnB,GAAkC,YAAY;AAC5C,SAAO;AACLrB,WAAO,KAAKA,KADP;AAELO,UAAM,KAAKA,IAFN;AAGLe,SAAK,KAAKA,GAHL;AAILX,eAAW,KAAKA,SAJX;AAKLE,qBAAiB,KAAKA,eALjB;AAMLC,eAAW,KAAKA;AANX,GAAP;AAQD,CATD;;AAWAf,WAAWqB,OAAX,CAAmBG,eAAnB,GAAqC,UAAUC,QAAV,EAAoB;AACvD,SAAOC,mBAAOC,WAAP,CAAmBF,QAAnB,EAA6B,KAAKd,eAAlC,CAAP;AACD,CAFD;;kBAIeZ,mBAAS6B,KAAT,CAAe,MAAf,EAAuB5B,UAAvB,C",
+      "file": "user.js",
+      "sourceRoot": "/root/startup-milk/src/models",
+      "sourcesContent": [
+        "import mongoose from 'mongoose';\nimport bcrypt from 'bcryptjs';\n\nconst Schema = mongoose.Schema;\n\nconst UserSchema = new Schema({\n  email: {\n    type: String,\n    unique: true,\n    lowercase: true,\n    index: true,\n    required: true,\n  },\n  role: {\n    type: String,\n    trim: true,\n    default: 'user',\n  },\n  hashed_password: {\n    type: String,\n    trim: true,\n    required: true,\n  },\n  have_paid: {\n    type: Boolean,\n    default: false,\n  },\n  have_downloaded: {\n    type: Boolean,\n    default: true,\n  },\n  subscribe: {\n    type: Boolean,\n    default: false,\n  },\n  created: {\n    type: Date,\n    default: Date.now,\n  },\n}, { collection: 'users', strict: true });\n\nUserSchema.methods.toClientJSON = function () {\n  return {\n    email: this.email,\n    role: this.role,\n    _id: this._id,\n    have_paid: this.have_paid,\n    have_downloaded: this.have_downloaded,\n    subscribe: this.subscribe,\n  };\n};\n\nUserSchema.methods.comparePassword = function (password) {\n  return bcrypt.compareSync(password, this.hashed_password);\n};\n\nexport default mongoose.model('User', UserSchema);\n"
+      ]
+    },
+    "mtime": 1563649039135
+  },
+  "{\"filename\":\"/root/startup-milk/src/models/products.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/root/startup-milk/src/models\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3:dev": {
+    "metadata": {
+      "usedHelpers": [
+        "typeof",
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "mongoose",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "mongoose"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/root/startup-milk/src/models/products.js",
+      "filenameRelative": "/root/startup-milk/src/models/products.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "products.js",
+      "sourceFileName": "products.js",
+      "sourceRoot": "/root/startup-milk/src/models",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/root/startup-milk/src/models",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "products"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _typeof = typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; };\n\nvar _mongoose = require('mongoose');\n\nvar _mongoose2 = _interopRequireDefault(_mongoose);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Schema = _mongoose2.default.Schema;\n\nvar ProductsSchema = new Schema({\n  url: {\n    type: String,\n    unique: true,\n    lowercase: true,\n    index: true,\n    required: true\n  },\n  category: {\n    type: String,\n    trim: true,\n    lowercase: true,\n    index: true,\n    required: true\n  },\n  name: {\n    type: String,\n    trim: true\n  },\n  desc_raw: {\n    type: String,\n    trim: true\n  },\n  desc_html: {\n    type: String,\n    trim: true\n  },\n  price: {\n    type: Number\n  },\n  display: {\n    type: String,\n    trim: true,\n    default: 'normal'\n  },\n  youtube: {\n    type: String,\n    default: ''\n  },\n  deleted: {\n    type: Boolean,\n    default: false\n  },\n  visible: {\n    type: Boolean,\n    default: false\n  },\n  files: [],\n  images: [],\n  related: [{\n    type: Schema.Types.ObjectId,\n    ref: 'Products'\n  }],\n  created: {\n    type: Date,\n    default: Date.now\n  }\n}, { collection: 'products', strict: true });\n\nProductsSchema.methods.toClientJSON = function () {\n  var files = {};\n  var downloads = [];\n  var related = [];\n\n  this.related.forEach(function (item) {\n    if ((typeof item === 'undefined' ? 'undefined' : _typeof(item)) !== 'object') {\n      return;\n    }\n\n    if (!item.visible) {\n      return;\n    }\n\n    related.push(item.toClientJSON());\n  });\n\n  this.files.forEach(function (file) {\n    if (!file.types) {\n      return;\n    }\n\n    downloads.push({\n      name: file.name,\n      file_id: file.file_id,\n      types: file.types,\n      size: file.size\n    });\n\n    file.types.forEach(function (type) {\n      files[type] = true;\n    });\n  });\n\n  var image = null;\n  var animation = null;\n\n  if (this.images.length) {\n    image = this.images[0].preview;\n\n    if (this.images[0].animated) {\n      animation = this.images[0].full;\n    }\n  }\n\n  return {\n    id: String(this._id),\n    image: image,\n    animation: animation,\n    category: this.category,\n    images: this.images,\n    url: this.url,\n    name: this.name,\n    desc: this.desc_html || this.desc_raw || this.desc,\n    price: this.price,\n    display: this.display,\n    youtube: this.youtube,\n    files: Object.keys(files),\n    downloads: downloads,\n    related: related\n  };\n};\n\nProductsSchema.methods.updateVisibility = function () {\n  this.visible = !(this.deleted || !this.images.length || !this.files.length);\n};\n\nexports.default = _mongoose2.default.model('Products', ProductsSchema);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2R1Y3RzLmpzIl0sIm5hbWVzIjpbIlNjaGVtYSIsIm1vbmdvb3NlIiwiUHJvZHVjdHNTY2hlbWEiLCJ1cmwiLCJ0eXBlIiwiU3RyaW5nIiwidW5pcXVlIiwibG93ZXJjYXNlIiwiaW5kZXgiLCJyZXF1aXJlZCIsImNhdGVnb3J5IiwidHJpbSIsIm5hbWUiLCJkZXNjX3JhdyIsImRlc2NfaHRtbCIsInByaWNlIiwiTnVtYmVyIiwiZGlzcGxheSIsImRlZmF1bHQiLCJ5b3V0dWJlIiwiZGVsZXRlZCIsIkJvb2xlYW4iLCJ2aXNpYmxlIiwiZmlsZXMiLCJpbWFnZXMiLCJyZWxhdGVkIiwiVHlwZXMiLCJPYmplY3RJZCIsInJlZiIsImNyZWF0ZWQiLCJEYXRlIiwibm93IiwiY29sbGVjdGlvbiIsInN0cmljdCIsIm1ldGhvZHMiLCJ0b0NsaWVudEpTT04iLCJkb3dubG9hZHMiLCJmb3JFYWNoIiwiaXRlbSIsInB1c2giLCJmaWxlIiwidHlwZXMiLCJmaWxlX2lkIiwic2l6ZSIsImltYWdlIiwiYW5pbWF0aW9uIiwibGVuZ3RoIiwicHJldmlldyIsImFuaW1hdGVkIiwiZnVsbCIsImlkIiwiX2lkIiwiZGVzYyIsIk9iamVjdCIsImtleXMiLCJ1cGRhdGVWaXNpYmlsaXR5IiwibW9kZWwiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQUE7Ozs7OztBQUVBLElBQU1BLFNBQVNDLG1CQUFTRCxNQUF4Qjs7QUFFQSxJQUFNRSxpQkFBaUIsSUFBSUYsTUFBSixDQUFXO0FBQ2hDRyxPQUFLO0FBQ0hDLFVBQU1DLE1BREg7QUFFSEMsWUFBUSxJQUZMO0FBR0hDLGVBQVcsSUFIUjtBQUlIQyxXQUFPLElBSko7QUFLSEMsY0FBVTtBQUxQLEdBRDJCO0FBUWhDQyxZQUFVO0FBQ1JOLFVBQU1DLE1BREU7QUFFUk0sVUFBTSxJQUZFO0FBR1JKLGVBQVcsSUFISDtBQUlSQyxXQUFPLElBSkM7QUFLUkMsY0FBVTtBQUxGLEdBUnNCO0FBZWhDRyxRQUFNO0FBQ0pSLFVBQU1DLE1BREY7QUFFSk0sVUFBTTtBQUZGLEdBZjBCO0FBbUJoQ0UsWUFBVTtBQUNSVCxVQUFNQyxNQURFO0FBRVJNLFVBQU07QUFGRSxHQW5Cc0I7QUF1QmhDRyxhQUFXO0FBQ1RWLFVBQU1DLE1BREc7QUFFVE0sVUFBTTtBQUZHLEdBdkJxQjtBQTJCaENJLFNBQU87QUFDTFgsVUFBTVk7QUFERCxHQTNCeUI7QUE4QmhDQyxXQUFTO0FBQ1BiLFVBQU1DLE1BREM7QUFFUE0sVUFBTSxJQUZDO0FBR1BPLGFBQVM7QUFIRixHQTlCdUI7QUFtQ2hDQyxXQUFTO0FBQ1BmLFVBQU1DLE1BREM7QUFFUGEsYUFBUztBQUZGLEdBbkN1QjtBQXVDaENFLFdBQVM7QUFDUGhCLFVBQU1pQixPQURDO0FBRVBILGFBQVM7QUFGRixHQXZDdUI7QUEyQ2hDSSxXQUFTO0FBQ1BsQixVQUFNaUIsT0FEQztBQUVQSCxhQUFTO0FBRkYsR0EzQ3VCO0FBK0NoQ0ssU0FBTyxFQS9DeUI7QUFrRGhDQyxVQUFRLEVBbER3QjtBQXFEaENDLFdBQVMsQ0FBQztBQUNSckIsVUFBTUosT0FBTzBCLEtBQVAsQ0FBYUMsUUFEWDtBQUVSQyxTQUFLO0FBRkcsR0FBRCxDQXJEdUI7QUF5RGhDQyxXQUFTO0FBQ1B6QixVQUFNMEIsSUFEQztBQUVQWixhQUFTWSxLQUFLQztBQUZQO0FBekR1QixDQUFYLEVBNkRwQixFQUFFQyxZQUFZLFVBQWQsRUFBMEJDLFFBQVEsSUFBbEMsRUE3RG9CLENBQXZCOztBQStEQS9CLGVBQWVnQyxPQUFmLENBQXVCQyxZQUF2QixHQUFzQyxZQUFXO0FBQy9DLE1BQU1aLFFBQVEsRUFBZDtBQUNBLE1BQU1hLFlBQVksRUFBbEI7QUFDQSxNQUFNWCxVQUFVLEVBQWhCOztBQUVBLE9BQUtBLE9BQUwsQ0FBYVksT0FBYixDQUFxQixVQUFDQyxJQUFELEVBQVU7QUFDN0IsUUFBSSxRQUFPQSxJQUFQLHlDQUFPQSxJQUFQLE9BQWdCLFFBQXBCLEVBQThCO0FBQzVCO0FBQ0Q7O0FBRUQsUUFBSSxDQUFDQSxLQUFLaEIsT0FBVixFQUFtQjtBQUNqQjtBQUNEOztBQUVERyxZQUFRYyxJQUFSLENBQWFELEtBQUtILFlBQUwsRUFBYjtBQUNELEdBVkQ7O0FBWUEsT0FBS1osS0FBTCxDQUFXYyxPQUFYLENBQW1CLFVBQUNHLElBQUQsRUFBVTtBQUMzQixRQUFJLENBQUNBLEtBQUtDLEtBQVYsRUFBaUI7QUFDZjtBQUNEOztBQUVETCxjQUFVRyxJQUFWLENBQWU7QUFDYjNCLFlBQU00QixLQUFLNUIsSUFERTtBQUViOEIsZUFBU0YsS0FBS0UsT0FGRDtBQUdiRCxhQUFPRCxLQUFLQyxLQUhDO0FBSWJFLFlBQU1ILEtBQUtHO0FBSkUsS0FBZjs7QUFPQUgsU0FBS0MsS0FBTCxDQUFXSixPQUFYLENBQW1CLFVBQUNqQyxJQUFELEVBQVU7QUFDM0JtQixZQUFNbkIsSUFBTixJQUFjLElBQWQ7QUFDRCxLQUZEO0FBR0QsR0FmRDs7QUFpQkEsTUFBSXdDLFFBQVEsSUFBWjtBQUNBLE1BQUlDLFlBQVksSUFBaEI7O0FBRUEsTUFBSSxLQUFLckIsTUFBTCxDQUFZc0IsTUFBaEIsRUFBd0I7QUFDdEJGLFlBQVEsS0FBS3BCLE1BQUwsQ0FBWSxDQUFaLEVBQWV1QixPQUF2Qjs7QUFFQSxRQUFJLEtBQUt2QixNQUFMLENBQVksQ0FBWixFQUFld0IsUUFBbkIsRUFBNkI7QUFDM0JILGtCQUFZLEtBQUtyQixNQUFMLENBQVksQ0FBWixFQUFleUIsSUFBM0I7QUFDRDtBQUNGOztBQUVELFNBQU87QUFDTEMsUUFBSTdDLE9BQU8sS0FBSzhDLEdBQVosQ0FEQztBQUVMUCxnQkFGSztBQUdMQyx3QkFISztBQUlMbkMsY0FBVSxLQUFLQSxRQUpWO0FBS0xjLFlBQVEsS0FBS0EsTUFMUjtBQU1MckIsU0FBSyxLQUFLQSxHQU5MO0FBT0xTLFVBQU0sS0FBS0EsSUFQTjtBQVFMd0MsVUFBTSxLQUFLdEMsU0FBTCxJQUFrQixLQUFLRCxRQUF2QixJQUFtQyxLQUFLdUMsSUFSekM7QUFTTHJDLFdBQU8sS0FBS0EsS0FUUDtBQVVMRSxhQUFTLEtBQUtBLE9BVlQ7QUFXTEUsYUFBUyxLQUFLQSxPQVhUO0FBWUxJLFdBQU84QixPQUFPQyxJQUFQLENBQVkvQixLQUFaLENBWkY7QUFhTGEsd0JBYks7QUFjTFg7QUFkSyxHQUFQO0FBZ0JELENBN0REOztBQStEQXZCLGVBQWVnQyxPQUFmLENBQXVCcUIsZ0JBQXZCLEdBQTBDLFlBQVc7QUFDbkQsT0FBS2pDLE9BQUwsR0FBZSxFQUFFLEtBQUtGLE9BQUwsSUFBZ0IsQ0FBQyxLQUFLSSxNQUFMLENBQVlzQixNQUE3QixJQUF1QyxDQUFDLEtBQUt2QixLQUFMLENBQVd1QixNQUFyRCxDQUFmO0FBQ0QsQ0FGRDs7a0JBSWU3QyxtQkFBU3VELEtBQVQsQ0FBZSxVQUFmLEVBQTJCdEQsY0FBM0IsQyIsImZpbGUiOiJwcm9kdWN0cy5qcyIsInNvdXJjZVJvb3QiOiIvcm9vdC9zdGFydHVwLW1pbGsvc3JjL21vZGVscyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBtb25nb29zZSBmcm9tICdtb25nb29zZSc7XG5cbmNvbnN0IFNjaGVtYSA9IG1vbmdvb3NlLlNjaGVtYTtcblxuY29uc3QgUHJvZHVjdHNTY2hlbWEgPSBuZXcgU2NoZW1hKHtcbiAgdXJsOiB7XG4gICAgdHlwZTogU3RyaW5nLFxuICAgIHVuaXF1ZTogdHJ1ZSxcbiAgICBsb3dlcmNhc2U6IHRydWUsXG4gICAgaW5kZXg6IHRydWUsXG4gICAgcmVxdWlyZWQ6IHRydWUsXG4gIH0sXG4gIGNhdGVnb3J5OiB7XG4gICAgdHlwZTogU3RyaW5nLFxuICAgIHRyaW06IHRydWUsXG4gICAgbG93ZXJjYXNlOiB0cnVlLFxuICAgIGluZGV4OiB0cnVlLFxuICAgIHJlcXVpcmVkOiB0cnVlLFxuICB9LFxuICBuYW1lOiB7XG4gICAgdHlwZTogU3RyaW5nLFxuICAgIHRyaW06IHRydWUsXG4gIH0sXG4gIGRlc2NfcmF3OiB7XG4gICAgdHlwZTogU3RyaW5nLFxuICAgIHRyaW06IHRydWUsXG4gIH0sXG4gIGRlc2NfaHRtbDoge1xuICAgIHR5cGU6IFN0cmluZyxcbiAgICB0cmltOiB0cnVlLFxuICB9LFxuICBwcmljZToge1xuICAgIHR5cGU6IE51bWJlcixcbiAgfSxcbiAgZGlzcGxheToge1xuICAgIHR5cGU6IFN0cmluZyxcbiAgICB0cmltOiB0cnVlLFxuICAgIGRlZmF1bHQ6ICdub3JtYWwnLFxuICB9LFxuICB5b3V0dWJlOiB7XG4gICAgdHlwZTogU3RyaW5nLFxuICAgIGRlZmF1bHQ6ICcnLFxuICB9LFxuICBkZWxldGVkOiB7XG4gICAgdHlwZTogQm9vbGVhbixcbiAgICBkZWZhdWx0OiBmYWxzZSxcbiAgfSxcbiAgdmlzaWJsZToge1xuICAgIHR5cGU6IEJvb2xlYW4sXG4gICAgZGVmYXVsdDogZmFsc2UsXG4gIH0sXG4gIGZpbGVzOiBbXG5cbiAgXSxcbiAgaW1hZ2VzOiBbXG5cbiAgXSxcbiAgcmVsYXRlZDogW3tcbiAgICB0eXBlOiBTY2hlbWEuVHlwZXMuT2JqZWN0SWQsXG4gICAgcmVmOiAnUHJvZHVjdHMnLFxuICB9XSxcbiAgY3JlYXRlZDoge1xuICAgIHR5cGU6IERhdGUsXG4gICAgZGVmYXVsdDogRGF0ZS5ub3csXG4gIH0sXG59LCB7IGNvbGxlY3Rpb246ICdwcm9kdWN0cycsIHN0cmljdDogdHJ1ZSB9KTtcblxuUHJvZHVjdHNTY2hlbWEubWV0aG9kcy50b0NsaWVudEpTT04gPSBmdW5jdGlvbigpIHtcbiAgY29uc3QgZmlsZXMgPSB7fTtcbiAgY29uc3QgZG93bmxvYWRzID0gW107XG4gIGNvbnN0IHJlbGF0ZWQgPSBbXTtcblxuICB0aGlzLnJlbGF0ZWQuZm9yRWFjaCgoaXRlbSkgPT4ge1xuICAgIGlmICh0eXBlb2YgaXRlbSAhPT0gJ29iamVjdCcpIHtcbiAgICAgIHJldHVybjtcbiAgICB9XG5cbiAgICBpZiAoIWl0ZW0udmlzaWJsZSkge1xuICAgICAgcmV0dXJuO1xuICAgIH1cblxuICAgIHJlbGF0ZWQucHVzaChpdGVtLnRvQ2xpZW50SlNPTigpKTtcbiAgfSk7XG5cbiAgdGhpcy5maWxlcy5mb3JFYWNoKChmaWxlKSA9PiB7XG4gICAgaWYgKCFmaWxlLnR5cGVzKSB7XG4gICAgICByZXR1cm47XG4gICAgfVxuXG4gICAgZG93bmxvYWRzLnB1c2goe1xuICAgICAgbmFtZTogZmlsZS5uYW1lLFxuICAgICAgZmlsZV9pZDogZmlsZS5maWxlX2lkLFxuICAgICAgdHlwZXM6IGZpbGUudHlwZXMsXG4gICAgICBzaXplOiBmaWxlLnNpemUsXG4gICAgfSk7XG5cbiAgICBmaWxlLnR5cGVzLmZvckVhY2goKHR5cGUpID0+IHtcbiAgICAgIGZpbGVzW3R5cGVdID0gdHJ1ZTtcbiAgICB9KTtcbiAgfSk7XG5cbiAgbGV0IGltYWdlID0gbnVsbDtcbiAgbGV0IGFuaW1hdGlvbiA9IG51bGw7XG5cbiAgaWYgKHRoaXMuaW1hZ2VzLmxlbmd0aCkge1xuICAgIGltYWdlID0gdGhpcy5pbWFnZXNbMF0ucHJldmlldztcblxuICAgIGlmICh0aGlzLmltYWdlc1swXS5hbmltYXRlZCkge1xuICAgICAgYW5pbWF0aW9uID0gdGhpcy5pbWFnZXNbMF0uZnVsbDtcbiAgICB9XG4gIH1cblxuICByZXR1cm4ge1xuICAgIGlkOiBTdHJpbmcodGhpcy5faWQpLFxuICAgIGltYWdlLFxuICAgIGFuaW1hdGlvbixcbiAgICBjYXRlZ29yeTogdGhpcy5jYXRlZ29yeSxcbiAgICBpbWFnZXM6IHRoaXMuaW1hZ2VzLFxuICAgIHVybDogdGhpcy51cmwsXG4gICAgbmFtZTogdGhpcy5uYW1lLFxuICAgIGRlc2M6IHRoaXMuZGVzY19odG1sIHx8IHRoaXMuZGVzY19yYXcgfHwgdGhpcy5kZXNjLFxuICAgIHByaWNlOiB0aGlzLnByaWNlLFxuICAgIGRpc3BsYXk6IHRoaXMuZGlzcGxheSxcbiAgICB5b3V0dWJlOiB0aGlzLnlvdXR1YmUsXG4gICAgZmlsZXM6IE9iamVjdC5rZXlzKGZpbGVzKSxcbiAgICBkb3dubG9hZHMsXG4gICAgcmVsYXRlZCxcbiAgfTtcbn07XG5cblByb2R1Y3RzU2NoZW1hLm1ldGhvZHMudXBkYXRlVmlzaWJpbGl0eSA9IGZ1bmN0aW9uKCkge1xuICB0aGlzLnZpc2libGUgPSAhKHRoaXMuZGVsZXRlZCB8fCAhdGhpcy5pbWFnZXMubGVuZ3RoIHx8ICF0aGlzLmZpbGVzLmxlbmd0aCk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBtb25nb29zZS5tb2RlbCgnUHJvZHVjdHMnLCBQcm9kdWN0c1NjaGVtYSk7XG4iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "products.js"
+      ],
+      "names": [
+        "Schema",
+        "mongoose",
+        "ProductsSchema",
+        "url",
+        "type",
+        "String",
+        "unique",
+        "lowercase",
+        "index",
+        "required",
+        "category",
+        "trim",
+        "name",
+        "desc_raw",
+        "desc_html",
+        "price",
+        "Number",
+        "display",
+        "default",
+        "youtube",
+        "deleted",
+        "Boolean",
+        "visible",
+        "files",
+        "images",
+        "related",
+        "Types",
+        "ObjectId",
+        "ref",
+        "created",
+        "Date",
+        "now",
+        "collection",
+        "strict",
+        "methods",
+        "toClientJSON",
+        "downloads",
+        "forEach",
+        "item",
+        "push",
+        "file",
+        "types",
+        "file_id",
+        "size",
+        "image",
+        "animation",
+        "length",
+        "preview",
+        "animated",
+        "full",
+        "id",
+        "_id",
+        "desc",
+        "Object",
+        "keys",
+        "updateVisibility",
+        "model"
+      ],
+      "mappings": "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",
+      "file": "products.js",
+      "sourceRoot": "/root/startup-milk/src/models",
+      "sourcesContent": [
+        "import mongoose from 'mongoose';\n\nconst Schema = mongoose.Schema;\n\nconst ProductsSchema = new Schema({\n  url: {\n    type: String,\n    unique: true,\n    lowercase: true,\n    index: true,\n    required: true,\n  },\n  category: {\n    type: String,\n    trim: true,\n    lowercase: true,\n    index: true,\n    required: true,\n  },\n  name: {\n    type: String,\n    trim: true,\n  },\n  desc_raw: {\n    type: String,\n    trim: true,\n  },\n  desc_html: {\n    type: String,\n    trim: true,\n  },\n  price: {\n    type: Number,\n  },\n  display: {\n    type: String,\n    trim: true,\n    default: 'normal',\n  },\n  youtube: {\n    type: String,\n    default: '',\n  },\n  deleted: {\n    type: Boolean,\n    default: false,\n  },\n  visible: {\n    type: Boolean,\n    default: false,\n  },\n  files: [\n\n  ],\n  images: [\n\n  ],\n  related: [{\n    type: Schema.Types.ObjectId,\n    ref: 'Products',\n  }],\n  created: {\n    type: Date,\n    default: Date.now,\n  },\n}, { collection: 'products', strict: true });\n\nProductsSchema.methods.toClientJSON = function() {\n  const files = {};\n  const downloads = [];\n  const related = [];\n\n  this.related.forEach((item) => {\n    if (typeof item !== 'object') {\n      return;\n    }\n\n    if (!item.visible) {\n      return;\n    }\n\n    related.push(item.toClientJSON());\n  });\n\n  this.files.forEach((file) => {\n    if (!file.types) {\n      return;\n    }\n\n    downloads.push({\n      name: file.name,\n      file_id: file.file_id,\n      types: file.types,\n      size: file.size,\n    });\n\n    file.types.forEach((type) => {\n      files[type] = true;\n    });\n  });\n\n  let image = null;\n  let animation = null;\n\n  if (this.images.length) {\n    image = this.images[0].preview;\n\n    if (this.images[0].animated) {\n      animation = this.images[0].full;\n    }\n  }\n\n  return {\n    id: String(this._id),\n    image,\n    animation,\n    category: this.category,\n    images: this.images,\n    url: this.url,\n    name: this.name,\n    desc: this.desc_html || this.desc_raw || this.desc,\n    price: this.price,\n    display: this.display,\n    youtube: this.youtube,\n    files: Object.keys(files),\n    downloads,\n    related,\n  };\n};\n\nProductsSchema.methods.updateVisibility = function() {\n  this.visible = !(this.deleted || !this.images.length || !this.files.length);\n};\n\nexport default mongoose.model('Products', ProductsSchema);\n"
+      ]
+    },
+    "mtime": 1563649039135
+  },
+  "{\"filename\":\"/root/startup-milk/src/models/cart.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/root/startup-milk/src/models\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3:dev": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "mongoose",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "mongoose"
+              }
+            ]
+          },
+          {
+            "source": "./products.js",
+            "imported": [],
+            "specifiers": []
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/root/startup-milk/src/models/cart.js",
+      "filenameRelative": "/root/startup-milk/src/models/cart.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "cart.js",
+      "sourceFileName": "cart.js",
+      "sourceRoot": "/root/startup-milk/src/models",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/root/startup-milk/src/models",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "cart"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _mongoose = require('mongoose');\n\nvar _mongoose2 = _interopRequireDefault(_mongoose);\n\nrequire('./products.js');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Schema = _mongoose2.default.Schema;\n\nvar CartSchema = new Schema({\n  list: [{\n    type: Schema.Types.ObjectId,\n    ref: 'Products'\n  }]\n}, { collection: 'carts', strict: true });\n\nCartSchema.methods.toClientJSON = function () {\n  var products = [];\n\n  this.list.forEach(function (product) {\n    if (!product.deleted) {\n      products.push(product.toClientJSON());\n    }\n  });\n\n  return {\n    products: products,\n    total: this.getPrice()\n  };\n};\n\nCartSchema.methods.getPrice = function () {\n  var total = 0;\n\n  this.list.forEach(function (product) {\n    if (!product.deleted) {\n      total += product.price;\n    }\n  });\n\n  return Math.floor(total * 100) / 100;\n};\n\nexports.default = _mongoose2.default.model('Cart', CartSchema);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNhcnQuanMiXSwibmFtZXMiOlsiU2NoZW1hIiwibW9uZ29vc2UiLCJDYXJ0U2NoZW1hIiwibGlzdCIsInR5cGUiLCJUeXBlcyIsIk9iamVjdElkIiwicmVmIiwiY29sbGVjdGlvbiIsInN0cmljdCIsIm1ldGhvZHMiLCJ0b0NsaWVudEpTT04iLCJwcm9kdWN0cyIsImZvckVhY2giLCJwcm9kdWN0IiwiZGVsZXRlZCIsInB1c2giLCJ0b3RhbCIsImdldFByaWNlIiwicHJpY2UiLCJNYXRoIiwiZmxvb3IiLCJtb2RlbCJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUE7Ozs7QUFDQTs7OztBQUVBLElBQU1BLFNBQVNDLG1CQUFTRCxNQUF4Qjs7QUFFQSxJQUFNRSxhQUFhLElBQUlGLE1BQUosQ0FBVztBQUM1QkcsUUFBTSxDQUFDO0FBQ0xDLFVBQU1KLE9BQU9LLEtBQVAsQ0FBYUMsUUFEZDtBQUVMQyxTQUFLO0FBRkEsR0FBRDtBQURzQixDQUFYLEVBS2hCLEVBQUVDLFlBQVksT0FBZCxFQUF1QkMsUUFBUSxJQUEvQixFQUxnQixDQUFuQjs7QUFPQVAsV0FBV1EsT0FBWCxDQUFtQkMsWUFBbkIsR0FBa0MsWUFBVztBQUMzQyxNQUFNQyxXQUFXLEVBQWpCOztBQUVBLE9BQUtULElBQUwsQ0FBVVUsT0FBVixDQUFrQixVQUFDQyxPQUFELEVBQWE7QUFDN0IsUUFBSSxDQUFDQSxRQUFRQyxPQUFiLEVBQXNCO0FBQ3BCSCxlQUFTSSxJQUFULENBQWNGLFFBQVFILFlBQVIsRUFBZDtBQUNEO0FBQ0YsR0FKRDs7QUFNQSxTQUFPO0FBQ0xDLHNCQURLO0FBRUxLLFdBQU8sS0FBS0MsUUFBTDtBQUZGLEdBQVA7QUFJRCxDQWJEOztBQWVBaEIsV0FBV1EsT0FBWCxDQUFtQlEsUUFBbkIsR0FBOEIsWUFBVztBQUN2QyxNQUFJRCxRQUFRLENBQVo7O0FBRUEsT0FBS2QsSUFBTCxDQUFVVSxPQUFWLENBQWtCLFVBQUNDLE9BQUQsRUFBYTtBQUM3QixRQUFJLENBQUNBLFFBQVFDLE9BQWIsRUFBc0I7QUFDcEJFLGVBQVNILFFBQVFLLEtBQWpCO0FBQ0Q7QUFDRixHQUpEOztBQU1BLFNBQU9DLEtBQUtDLEtBQUwsQ0FBV0osUUFBUSxHQUFuQixJQUEwQixHQUFqQztBQUNELENBVkQ7O2tCQVllaEIsbUJBQVNxQixLQUFULENBQWUsTUFBZixFQUF1QnBCLFVBQXZCLEMiLCJmaWxlIjoiY2FydC5qcyIsInNvdXJjZVJvb3QiOiIvcm9vdC9zdGFydHVwLW1pbGsvc3JjL21vZGVscyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBtb25nb29zZSBmcm9tICdtb25nb29zZSc7XG5pbXBvcnQgJy4vcHJvZHVjdHMuanMnO1xuXG5jb25zdCBTY2hlbWEgPSBtb25nb29zZS5TY2hlbWE7XG5cbmNvbnN0IENhcnRTY2hlbWEgPSBuZXcgU2NoZW1hKHtcbiAgbGlzdDogW3tcbiAgICB0eXBlOiBTY2hlbWEuVHlwZXMuT2JqZWN0SWQsXG4gICAgcmVmOiAnUHJvZHVjdHMnLFxuICB9XSxcbn0sIHsgY29sbGVjdGlvbjogJ2NhcnRzJywgc3RyaWN0OiB0cnVlIH0pO1xuXG5DYXJ0U2NoZW1hLm1ldGhvZHMudG9DbGllbnRKU09OID0gZnVuY3Rpb24oKSB7XG4gIGNvbnN0IHByb2R1Y3RzID0gW107XG5cbiAgdGhpcy5saXN0LmZvckVhY2goKHByb2R1Y3QpID0+IHtcbiAgICBpZiAoIXByb2R1Y3QuZGVsZXRlZCkge1xuICAgICAgcHJvZHVjdHMucHVzaChwcm9kdWN0LnRvQ2xpZW50SlNPTigpKTtcbiAgICB9XG4gIH0pO1xuXG4gIHJldHVybiB7XG4gICAgcHJvZHVjdHMsXG4gICAgdG90YWw6IHRoaXMuZ2V0UHJpY2UoKSxcbiAgfTtcbn07XG5cbkNhcnRTY2hlbWEubWV0aG9kcy5nZXRQcmljZSA9IGZ1bmN0aW9uKCkge1xuICBsZXQgdG90YWwgPSAwO1xuXG4gIHRoaXMubGlzdC5mb3JFYWNoKChwcm9kdWN0KSA9PiB7XG4gICAgaWYgKCFwcm9kdWN0LmRlbGV0ZWQpIHtcbiAgICAgIHRvdGFsICs9IHByb2R1Y3QucHJpY2U7XG4gICAgfVxuICB9KTtcblxuICByZXR1cm4gTWF0aC5mbG9vcih0b3RhbCAqIDEwMCkgLyAxMDA7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBtb25nb29zZS5tb2RlbCgnQ2FydCcsIENhcnRTY2hlbWEpO1xuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "cart.js"
+      ],
+      "names": [
+        "Schema",
+        "mongoose",
+        "CartSchema",
+        "list",
+        "type",
+        "Types",
+        "ObjectId",
+        "ref",
+        "collection",
+        "strict",
+        "methods",
+        "toClientJSON",
+        "products",
+        "forEach",
+        "product",
+        "deleted",
+        "push",
+        "total",
+        "getPrice",
+        "price",
+        "Math",
+        "floor",
+        "model"
+      ],
+      "mappings": ";;;;;;AAAA;;;;AACA;;;;AAEA,IAAMA,SAASC,mBAASD,MAAxB;;AAEA,IAAME,aAAa,IAAIF,MAAJ,CAAW;AAC5BG,QAAM,CAAC;AACLC,UAAMJ,OAAOK,KAAP,CAAaC,QADd;AAELC,SAAK;AAFA,GAAD;AADsB,CAAX,EAKhB,EAAEC,YAAY,OAAd,EAAuBC,QAAQ,IAA/B,EALgB,CAAnB;;AAOAP,WAAWQ,OAAX,CAAmBC,YAAnB,GAAkC,YAAW;AAC3C,MAAMC,WAAW,EAAjB;;AAEA,OAAKT,IAAL,CAAUU,OAAV,CAAkB,UAACC,OAAD,EAAa;AAC7B,QAAI,CAACA,QAAQC,OAAb,EAAsB;AACpBH,eAASI,IAAT,CAAcF,QAAQH,YAAR,EAAd;AACD;AACF,GAJD;;AAMA,SAAO;AACLC,sBADK;AAELK,WAAO,KAAKC,QAAL;AAFF,GAAP;AAID,CAbD;;AAeAhB,WAAWQ,OAAX,CAAmBQ,QAAnB,GAA8B,YAAW;AACvC,MAAID,QAAQ,CAAZ;;AAEA,OAAKd,IAAL,CAAUU,OAAV,CAAkB,UAACC,OAAD,EAAa;AAC7B,QAAI,CAACA,QAAQC,OAAb,EAAsB;AACpBE,eAASH,QAAQK,KAAjB;AACD;AACF,GAJD;;AAMA,SAAOC,KAAKC,KAAL,CAAWJ,QAAQ,GAAnB,IAA0B,GAAjC;AACD,CAVD;;kBAYehB,mBAASqB,KAAT,CAAe,MAAf,EAAuBpB,UAAvB,C",
+      "file": "cart.js",
+      "sourceRoot": "/root/startup-milk/src/models",
+      "sourcesContent": [
+        "import mongoose from 'mongoose';\nimport './products.js';\n\nconst Schema = mongoose.Schema;\n\nconst CartSchema = new Schema({\n  list: [{\n    type: Schema.Types.ObjectId,\n    ref: 'Products',\n  }],\n}, { collection: 'carts', strict: true });\n\nCartSchema.methods.toClientJSON = function() {\n  const products = [];\n\n  this.list.forEach((product) => {\n    if (!product.deleted) {\n      products.push(product.toClientJSON());\n    }\n  });\n\n  return {\n    products,\n    total: this.getPrice(),\n  };\n};\n\nCartSchema.methods.getPrice = function() {\n  let total = 0;\n\n  this.list.forEach((product) => {\n    if (!product.deleted) {\n      total += product.price;\n    }\n  });\n\n  return Math.floor(total * 100) / 100;\n};\n\nexport default mongoose.model('Cart', CartSchema);\n"
+      ]
+    },
+    "mtime": 1563649039135
+  },
+  "{\"filename\":\"/root/startup-milk/src/models/order.js\",\"env\":{\"development\":{\"plugins\":[]}},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}],[[],null],[[],null],[[],null],[[],null]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/root/startup-milk/src/models\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3:dev": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "mongoose",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "mongoose"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/root/startup-milk/src/models/order.js",
+      "filenameRelative": "/root/startup-milk/src/models/order.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "order.js",
+      "sourceFileName": "order.js",
+      "sourceRoot": "/root/startup-milk/src/models",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/root/startup-milk/src/models",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "order"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _mongoose = require('mongoose');\n\nvar _mongoose2 = _interopRequireDefault(_mongoose);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Schema = _mongoose2.default.Schema;\n\nvar OrderSchema = new Schema({\n  order_numeric_id: {\n    type: Number,\n    required: true,\n    default: 0\n  },\n  email: {\n    type: String,\n    index: true,\n    required: true\n  },\n  user: {\n    type: Schema.Types.ObjectId,\n    ref: 'User'\n  },\n  list: [{\n    type: Schema.Types.ObjectId, ref: 'Products'\n  }],\n  price: {\n    type: Number,\n    required: true\n  },\n  completed: {\n    type: Boolean,\n    required: true,\n    default: false\n  },\n  stripe_token: {\n    type: String\n  },\n  stripe_charge: {\n    type: String\n  },\n  created: {\n    type: Date,\n    default: Date.now\n  }\n}, { collection: 'orders', strict: true });\n\nOrderSchema.methods.toClientJSON = function () {\n  return {\n    id: this._id,\n    numeric_id: this.order_numeric_id,\n    price: this.price,\n    user: this.user.toClientJSON(),\n    created: this.created,\n    email: this.email,\n    products: this.list.map(function (product) {\n      return product.toClientJSON();\n    })\n  };\n};\n\nexports.default = _mongoose2.default.model('Order', OrderSchema);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm9yZGVyLmpzIl0sIm5hbWVzIjpbIlNjaGVtYSIsIm1vbmdvb3NlIiwiT3JkZXJTY2hlbWEiLCJvcmRlcl9udW1lcmljX2lkIiwidHlwZSIsIk51bWJlciIsInJlcXVpcmVkIiwiZGVmYXVsdCIsImVtYWlsIiwiU3RyaW5nIiwiaW5kZXgiLCJ1c2VyIiwiVHlwZXMiLCJPYmplY3RJZCIsInJlZiIsImxpc3QiLCJwcmljZSIsImNvbXBsZXRlZCIsIkJvb2xlYW4iLCJzdHJpcGVfdG9rZW4iLCJzdHJpcGVfY2hhcmdlIiwiY3JlYXRlZCIsIkRhdGUiLCJub3ciLCJjb2xsZWN0aW9uIiwic3RyaWN0IiwibWV0aG9kcyIsInRvQ2xpZW50SlNPTiIsImlkIiwiX2lkIiwibnVtZXJpY19pZCIsInByb2R1Y3RzIiwibWFwIiwicHJvZHVjdCIsIm1vZGVsIl0sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQTs7Ozs7O0FBRUEsSUFBTUEsU0FBU0MsbUJBQVNELE1BQXhCOztBQUVBLElBQU1FLGNBQWMsSUFBSUYsTUFBSixDQUFXO0FBQzdCRyxvQkFBa0I7QUFDaEJDLFVBQU1DLE1BRFU7QUFFaEJDLGNBQVUsSUFGTTtBQUdoQkMsYUFBUztBQUhPLEdBRFc7QUFNN0JDLFNBQU87QUFDTEosVUFBTUssTUFERDtBQUVMQyxXQUFPLElBRkY7QUFHTEosY0FBVTtBQUhMLEdBTnNCO0FBVzdCSyxRQUFNO0FBQ0pQLFVBQU1KLE9BQU9ZLEtBQVAsQ0FBYUMsUUFEZjtBQUVKQyxTQUFLO0FBRkQsR0FYdUI7QUFlN0JDLFFBQU0sQ0FBQztBQUNMWCxVQUFNSixPQUFPWSxLQUFQLENBQWFDLFFBRGQsRUFDd0JDLEtBQUs7QUFEN0IsR0FBRCxDQWZ1QjtBQWtCN0JFLFNBQU87QUFDTFosVUFBTUMsTUFERDtBQUVMQyxjQUFVO0FBRkwsR0FsQnNCO0FBc0I3QlcsYUFBVztBQUNUYixVQUFNYyxPQURHO0FBRVRaLGNBQVUsSUFGRDtBQUdUQyxhQUFTO0FBSEEsR0F0QmtCO0FBMkI3QlksZ0JBQWM7QUFDWmYsVUFBTUs7QUFETSxHQTNCZTtBQThCN0JXLGlCQUFlO0FBQ2JoQixVQUFNSztBQURPLEdBOUJjO0FBaUM3QlksV0FBUztBQUNQakIsVUFBTWtCLElBREM7QUFFUGYsYUFBU2UsS0FBS0M7QUFGUDtBQWpDb0IsQ0FBWCxFQXFDakIsRUFBRUMsWUFBWSxRQUFkLEVBQXdCQyxRQUFRLElBQWhDLEVBckNpQixDQUFwQjs7QUF1Q0F2QixZQUFZd0IsT0FBWixDQUFvQkMsWUFBcEIsR0FBbUMsWUFBVztBQUM1QyxTQUFPO0FBQ0xDLFFBQUksS0FBS0MsR0FESjtBQUVMQyxnQkFBWSxLQUFLM0IsZ0JBRlo7QUFHTGEsV0FBTyxLQUFLQSxLQUhQO0FBSUxMLFVBQU0sS0FBS0EsSUFBTCxDQUFVZ0IsWUFBVixFQUpEO0FBS0xOLGFBQVMsS0FBS0EsT0FMVDtBQU1MYixXQUFPLEtBQUtBLEtBTlA7QUFPTHVCLGNBQVUsS0FBS2hCLElBQUwsQ0FBVWlCLEdBQVYsQ0FBYyxVQUFDQyxPQUFELEVBQWE7QUFDbkMsYUFBT0EsUUFBUU4sWUFBUixFQUFQO0FBQ0QsS0FGUztBQVBMLEdBQVA7QUFXRCxDQVpEOztrQkFjZTFCLG1CQUFTaUMsS0FBVCxDQUFlLE9BQWYsRUFBd0JoQyxXQUF4QixDIiwiZmlsZSI6Im9yZGVyLmpzIiwic291cmNlUm9vdCI6Ii9yb290L3N0YXJ0dXAtbWlsay9zcmMvbW9kZWxzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IG1vbmdvb3NlIGZyb20gJ21vbmdvb3NlJztcblxuY29uc3QgU2NoZW1hID0gbW9uZ29vc2UuU2NoZW1hO1xuXG5jb25zdCBPcmRlclNjaGVtYSA9IG5ldyBTY2hlbWEoe1xuICBvcmRlcl9udW1lcmljX2lkOiB7XG4gICAgdHlwZTogTnVtYmVyLFxuICAgIHJlcXVpcmVkOiB0cnVlLFxuICAgIGRlZmF1bHQ6IDAsXG4gIH0sXG4gIGVtYWlsOiB7XG4gICAgdHlwZTogU3RyaW5nLFxuICAgIGluZGV4OiB0cnVlLFxuICAgIHJlcXVpcmVkOiB0cnVlLFxuICB9LFxuICB1c2VyOiB7XG4gICAgdHlwZTogU2NoZW1hLlR5cGVzLk9iamVjdElkLFxuICAgIHJlZjogJ1VzZXInLFxuICB9LFxuICBsaXN0OiBbe1xuICAgIHR5cGU6IFNjaGVtYS5UeXBlcy5PYmplY3RJZCwgcmVmOiAnUHJvZHVjdHMnLFxuICB9XSxcbiAgcHJpY2U6IHtcbiAgICB0eXBlOiBOdW1iZXIsXG4gICAgcmVxdWlyZWQ6IHRydWUsXG4gIH0sXG4gIGNvbXBsZXRlZDoge1xuICAgIHR5cGU6IEJvb2xlYW4sXG4gICAgcmVxdWlyZWQ6IHRydWUsXG4gICAgZGVmYXVsdDogZmFsc2UsXG4gIH0sXG4gIHN0cmlwZV90b2tlbjoge1xuICAgIHR5cGU6IFN0cmluZyxcbiAgfSxcbiAgc3RyaXBlX2NoYXJnZToge1xuICAgIHR5cGU6IFN0cmluZyxcbiAgfSxcbiAgY3JlYXRlZDoge1xuICAgIHR5cGU6IERhdGUsXG4gICAgZGVmYXVsdDogRGF0ZS5ub3csXG4gIH0sXG59LCB7IGNvbGxlY3Rpb246ICdvcmRlcnMnLCBzdHJpY3Q6IHRydWUgfSk7XG5cbk9yZGVyU2NoZW1hLm1ldGhvZHMudG9DbGllbnRKU09OID0gZnVuY3Rpb24oKSB7XG4gIHJldHVybiB7XG4gICAgaWQ6IHRoaXMuX2lkLFxuICAgIG51bWVyaWNfaWQ6IHRoaXMub3JkZXJfbnVtZXJpY19pZCxcbiAgICBwcmljZTogdGhpcy5wcmljZSxcbiAgICB1c2VyOiB0aGlzLnVzZXIudG9DbGllbnRKU09OKCksXG4gICAgY3JlYXRlZDogdGhpcy5jcmVhdGVkLFxuICAgIGVtYWlsOiB0aGlzLmVtYWlsLFxuICAgIHByb2R1Y3RzOiB0aGlzLmxpc3QubWFwKChwcm9kdWN0KSA9PiB7XG4gICAgICByZXR1cm4gcHJvZHVjdC50b0NsaWVudEpTT04oKTtcbiAgICB9KSxcbiAgfTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IG1vbmdvb3NlLm1vZGVsKCdPcmRlcicsIE9yZGVyU2NoZW1hKTsiXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "order.js"
+      ],
+      "names": [
+        "Schema",
+        "mongoose",
+        "OrderSchema",
+        "order_numeric_id",
+        "type",
+        "Number",
+        "required",
+        "default",
+        "email",
+        "String",
+        "index",
+        "user",
+        "Types",
+        "ObjectId",
+        "ref",
+        "list",
+        "price",
+        "completed",
+        "Boolean",
+        "stripe_token",
+        "stripe_charge",
+        "created",
+        "Date",
+        "now",
+        "collection",
+        "strict",
+        "methods",
+        "toClientJSON",
+        "id",
+        "_id",
+        "numeric_id",
+        "products",
+        "map",
+        "product",
+        "model"
+      ],
+      "mappings": ";;;;;;AAAA;;;;;;AAEA,IAAMA,SAASC,mBAASD,MAAxB;;AAEA,IAAME,cAAc,IAAIF,MAAJ,CAAW;AAC7BG,oBAAkB;AAChBC,UAAMC,MADU;AAEhBC,cAAU,IAFM;AAGhBC,aAAS;AAHO,GADW;AAM7BC,SAAO;AACLJ,UAAMK,MADD;AAELC,WAAO,IAFF;AAGLJ,cAAU;AAHL,GANsB;AAW7BK,QAAM;AACJP,UAAMJ,OAAOY,KAAP,CAAaC,QADf;AAEJC,SAAK;AAFD,GAXuB;AAe7BC,QAAM,CAAC;AACLX,UAAMJ,OAAOY,KAAP,CAAaC,QADd,EACwBC,KAAK;AAD7B,GAAD,CAfuB;AAkB7BE,SAAO;AACLZ,UAAMC,MADD;AAELC,cAAU;AAFL,GAlBsB;AAsB7BW,aAAW;AACTb,UAAMc,OADG;AAETZ,cAAU,IAFD;AAGTC,aAAS;AAHA,GAtBkB;AA2B7BY,gBAAc;AACZf,UAAMK;AADM,GA3Be;AA8B7BW,iBAAe;AACbhB,UAAMK;AADO,GA9Bc;AAiC7BY,WAAS;AACPjB,UAAMkB,IADC;AAEPf,aAASe,KAAKC;AAFP;AAjCoB,CAAX,EAqCjB,EAAEC,YAAY,QAAd,EAAwBC,QAAQ,IAAhC,EArCiB,CAApB;;AAuCAvB,YAAYwB,OAAZ,CAAoBC,YAApB,GAAmC,YAAW;AAC5C,SAAO;AACLC,QAAI,KAAKC,GADJ;AAELC,gBAAY,KAAK3B,gBAFZ;AAGLa,WAAO,KAAKA,KAHP;AAILL,UAAM,KAAKA,IAAL,CAAUgB,YAAV,EAJD;AAKLN,aAAS,KAAKA,OALT;AAMLb,WAAO,KAAKA,KANP;AAOLuB,cAAU,KAAKhB,IAAL,CAAUiB,GAAV,CAAc,UAACC,OAAD,EAAa;AACnC,aAAOA,QAAQN,YAAR,EAAP;AACD,KAFS;AAPL,GAAP;AAWD,CAZD;;kBAce1B,mBAASiC,KAAT,CAAe,OAAf,EAAwBhC,WAAxB,C",
+      "file": "order.js",
+      "sourceRoot": "/root/startup-milk/src/models",
+      "sourcesContent": [
+        "import mongoose from 'mongoose';\n\nconst Schema = mongoose.Schema;\n\nconst OrderSchema = new Schema({\n  order_numeric_id: {\n    type: Number,\n    required: true,\n    default: 0,\n  },\n  email: {\n    type: String,\n    index: true,\n    required: true,\n  },\n  user: {\n    type: Schema.Types.ObjectId,\n    ref: 'User',\n  },\n  list: [{\n    type: Schema.Types.ObjectId, ref: 'Products',\n  }],\n  price: {\n    type: Number,\n    required: true,\n  },\n  completed: {\n    type: Boolean,\n    required: true,\n    default: false,\n  },\n  stripe_token: {\n    type: String,\n  },\n  stripe_charge: {\n    type: String,\n  },\n  created: {\n    type: Date,\n    default: Date.now,\n  },\n}, { collection: 'orders', strict: true });\n\nOrderSchema.methods.toClientJSON = function() {\n  return {\n    id: this._id,\n    numeric_id: this.order_numeric_id,\n    price: this.price,\n    user: this.user.toClientJSON(),\n    created: this.created,\n    email: this.email,\n    products: this.list.map((product) => {\n      return product.toClientJSON();\n    }),\n  };\n};\n\nexport default mongoose.model('Order', OrderSchema);"
+      ]
+    },
+    "mtime": 1563649039135
+  }
+}

@@ -1,0 +1,11 @@
+
+<--- Last few GCs --->
+
+[20680:0x5599873381b0]      525 ms: Scavenge 13.4 (20.0) -> 10.9 (21.0) MB, 2.4 / 0.0 ms  allocation failure 
+[20680:0x5599873381b0]      610 ms: Scavenge 14.5 (21.0) -> 12.9 (30.0) MB, 3.1 / 0.0 ms  allocation failure 
+[20680:0x5599873381b0]      764 ms: Scavenge 20.2 (30.5) -> 16.6 (32.0) MB, 4.3 / 0.0 ms  allocation failure 
+[20680:0x5599873381b0]     1105 ms: Scavenge 22.6 (33.1) -> 18.5 (36.1) MB, 75.5 / 4.1 ms  allocation failure 
+
+
+<--- JS stacktrace --->
+Cannot get stack trace in GC.
